@@ -1,0 +1,1 @@
+PDF BPS asli tersedia di folder ini. Notebook akan menyimpan respons JSON Open-Meteo, robots.txt, dan HTML BPS setelah dijalankan dengan koneksi internet dan User-Agent email kampus. Jangan membuat data mentah palsu.

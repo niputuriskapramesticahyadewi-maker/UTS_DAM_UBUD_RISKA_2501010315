@@ -1,61 +1,48 @@
 # UTS Data Acquisition & Management
-## Akuisisi Data Akomodasi Pariwisata di Kecamatan Ubud, Gianyar, Bali
+
+## Akuisisi Data Akomodasi Pariwisata Kecamatan Ubud, Gianyar, Bali
 
 ### Identitas
 - **Nama:** Ni Putu Riska Pramesti Cahya Dewi
 - **NIM:** 2501010315
 - **Program Studi:** Informatika
-- **Mata Kuliah:** Data Acquisition & Management
 - **Perguruan Tinggi:** INSTIKI
 
-### Tujuan
-Proyek ini disusun untuk memenuhi UTS mata kuliah Data Acquisition & Management dengan fokus akuisisi dan pemeriksaan data akomodasi pariwisata di Kecamatan Ubud, Kabupaten Gianyar, Bali.
+### Isi repository
+Proyek ini disusun untuk memenuhi UTS mata kuliah Data Acquisition & Management. Folder proyek utama berada di:
 
-### Status pengerjaan
-**Repository ini masih berupa kerangka pengerjaan, belum merupakan hasil final UTS.**
+`UTS_DAM_UBUD_RISKA_2501010315_FINAL/`
 
-Sudah tersedia:
-- Notebook Python untuk alur pengerjaan soal 1–5.
-- Identitas dan deskripsi topik.
-- Referensi awal BPS Kecamatan Ubud.
-- Rancangan pemeriksaan kualitas data, provenance, dan etika.
-- Rancangan akuisisi data cuaca Open-Meteo sebagai data pendukung.
+Di dalamnya tersedia:
+- Notebook utama untuk mengerjakan soal 1–5.
+- PDF publikasi BPS *Direktori Hotel Kabupaten Gianyar 2017* di `data/raw/`.
+- CSV ekstraksi direktori akomodasi di `data/interim/`.
+- Data Ethics Checklist dalam format CSV dan Excel.
+- Dokumentasi proyek dan dependensi Python.
 
-Masih harus dilengkapi:
-1. Dataset resmi direktori usaha akomodasi Kecamatan Ubud minimal 100 baris.
-2. Bukti metadata, lisensi, dan ketentuan penggunaan dataset utama.
-3. Pemeriksaan PII dan quasi-identifier berdasarkan kolom dataset sebenarnya.
-4. URL scraping resmi yang relevan, pemeriksaan robots.txt, dan hasil scraping nyata.
-5. Eksekusi notebook dari awal sampai akhir dan penyimpanan seluruh output.
+### Catatan penting tentang data utama
+CSV ekstraksi berisi **326 baris dan 7 kolom** berdasarkan file yang tersimpan di repository. Data direktori yang dianalisis merujuk pada **tahun 2015**, sedangkan publikasi BPS terbit pada tahun 2017. Karena itu, data ini bersifat historis dan tidak boleh disebut sebagai daftar akomodasi aktif saat ini.
 
-**Jangan mengarang data, lisensi, hasil scraping, atau hasil eksekusi.**
+PDF mentah disimpan sebagai sumber asli. CSV merupakan hasil ekstraksi untuk analisis; kolom nomor telepon tidak disertakan dalam CSV turunan. Publikasi BPS memuat pembatasan penggandaan/distribusi untuk tujuan komersial tanpa izin tertulis. Akses unduh publik tidak otomatis berarti lisensi terbuka tanpa batas.
 
-### Sumber awal
-1. BPS Kabupaten Gianyar, *Kecamatan Ubud Dalam Angka 2025*:  
-   https://gianyarkab.bps.go.id/id/publication/2025/09/26/d7aaf2f580d8d7aa8a34ed93/kecamatan-ubud-dalam-angka-2025.html
-2. Open-Meteo Historical Weather API:  
-   https://open-meteo.com/en/docs/historical-weather-api
+### Cara menjalankan
+1. Unduh atau clone repository.
+2. Buka notebook `UTS_DAM_UBUD_RISKA_2501010315_FINAL/UTS_DAM_UBUD_RISKA_2501010315.ipynb` di Google Colab.
+3. Pastikan folder proyek diekstrak dan file CSV serta PDF berada pada struktur folder aslinya.
+4. Jalankan sel dari atas ke bawah.
+5. Masukkan email institusi mahasiswa yang benar saat diminta. Jangan memasukkan password atau token.
+6. Periksa hasil API, pemeriksaan `robots.txt`, scraping, merge, provenance, dan metadata.
+7. Simpan ulang notebook setelah semua sel berhasil dijalankan, sehingga output eksekusi ikut tersimpan.
+8. Periksa kembali seluruh file hasil sebelum mengumpulkan URL GitHub melalui ELSA.
 
-Catatan: tabel BPS agregat jumlah sarana akomodasi per desa bukan direktori daftar usaha 100+ baris. Gunakan hanya sebagai data pendukung, bukan pengganti dataset utama.
+### Persyaratan yang harus diverifikasi sebelum pengumpulan
+- Dataset utama minimal 100 baris.
+- Identifikasi dataset dan estimasi storage sesuai rumus soal.
+- Data Ethics Checklist 9 butir dengan bukti.
+- Akuisisi API menghasilkan minimal 30 baris.
+- Pemeriksaan `robots.txt` dan scraping halaman statis yang diizinkan, dengan bukti nyata.
+- Penggabungan minimal dua sumber memakai `merge` dan parameter `validate`.
+- Pemeriksaan duplikasi, file hasil penggabungan, metadata hasil, dan provenance (URL, tanggal akses, lisensi, MD5).
+- Notebook sudah dijalankan seluruhnya dan output tersimpan.
 
-### Struktur repository saat ini
-```text
-UTS_DAM_UBUD_RISKA_2501010315/
-├── README.md
-└── UTS_DAM_UBUD_RISKA_2501010315/
-    ├── README.md
-    └── UTS_DAM_UBUD_RISKA_2501010315.ipynb
-```
-
-Folder `data/` dan `metadata/` belum ada di repository. Folder tersebut dibuat dan diisi setelah data asli serta hasil proses tersedia.
-
-### Cara menjalankan notebook
-1. Buka notebook menggunakan Google Colab.
-2. Isi `EMAIL_KAMPUS` dengan email kampus aktif.
-3. Siapkan dataset resmi dan simpan sebagai `data/raw/akomodasi_ubud.xlsx`.
-4. Periksa dan isi URL scraping yang benar-benar diizinkan.
-5. Jalankan semua cell secara berurutan.
-6. Simpan data mentah, hasil olahan, provenance, dan checklist etika.
-
----
-**Proyek hanya dapat dinyatakan selesai setelah dataset utama, bukti sumber, hasil proses, dan seluruh persyaratan tugas diverifikasi.**
+**Jangan mengarang hasil API, scraping, lisensi, provenance, atau output notebook.** Jika sumber menolak akses atau tidak menyediakan tabel statis, catat keadaan sebenarnya dan selesaikan dengan sumber lain yang diizinkan atau konsultasi kepada dosen.

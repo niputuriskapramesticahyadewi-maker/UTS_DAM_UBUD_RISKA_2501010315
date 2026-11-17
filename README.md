@@ -8,51 +8,48 @@
 - **Perguruan Tinggi:** INSTIKI
 
 ## Deskripsi proyek
-Repository ini berisi pengerjaan Ujian Tengah Semester (UTS) mata kuliah **Data Acquisition & Management** dengan topik data akomodasi pariwisata di Kecamatan Ubud, Kabupaten Gianyar, Bali.
+Repository ini berisi pengerjaan UTS mata kuliah **Data Acquisition & Management**. Proyek mengolah direktori akomodasi Kecamatan Ubud dari publikasi BPS, mengambil data cuaca historis Open-Meteo sebagai konteks wilayah, memeriksa akses situs BPS, melakukan penggabungan data, dan menyusun metadata.
 
-Folder utama proyek: `UTS_DAM_UBUD_RISKA_2501010315_FINAL/`
+Folder utama: `UTS_DAM_UBUD_RISKA_2501010315_FINAL/`.
 
-## Sumber dan gambaran data
-Dataset direktori akomodasi yang tersedia di repository memuat **326 baris dan 7 kolom**. Data tersebut merujuk pada tahun **2015**, berdasarkan publikasi BPS yang terbit pada **2017**. Dengan demikian, dataset ini merupakan data historis dan **bukan daftar akomodasi yang dipastikan masih aktif saat ini**.
+## Ringkasan data berdasarkan output notebook
+- Dataset akomodasi: **104 baris dan 7 kolom**.
+- Periode data akomodasi: **2015** (publikasi BPS terbit 2017).
+- Data cuaca Open-Meteo: **31 observasi harian**, 1–31 Januari 2025.
+- Hasil penggabungan: **104 baris dan 11 kolom**.
+- Validasi merge pada output notebook: 104 baris cocok, 0 tidak cocok, dan 0 duplikasi.
 
-PDF publikasi disimpan di `data/raw/`, sedangkan CSV hasil ekstraksi tersedia di `data/interim/`. CSV merupakan data turunan untuk analisis. Publikasi sumber mencantumkan ketentuan penggunaan; ketersediaan unduhan publik tidak otomatis berarti seluruh isi bebas digunakan tanpa batas, terutama untuk tujuan komersial.
+Data cuaca Januari 2025 merupakan konteks cuaca wilayah, bukan cuaca pada tahun pendataan akomodasi 2015 dan bukan atribut yang diukur per usaha.
 
 ## Struktur repository
-- `UTS_DAM_UBUD_RISKA_2501010315.ipynb` — notebook utama pengerjaan soal.
-- `data/raw/` — dokumen sumber dan respons mentah yang benar-benar diperoleh.
-- `data/interim/` — dataset ekstraksi dan data perantara.
-- `data/processed/` — hasil pengolahan/penggabungan setelah notebook dijalankan.
-- `metadata/` — Data Ethics Checklist, provenance, dan metadata hasil.
-- `docs/` — dokumentasi, panduan, dan bukti proses scraping.
+- `UTS_DAM_UBUD_RISKA_2501010315_FINAL/UTS_DAM_UBUD_RISKA_2501010315.ipynb` — notebook utama.
+- `data/raw/` — PDF sumber BPS dan catatan file mentah.
+- `data/interim/` — CSV hasil ekstraksi direktori akomodasi.
+- `data/processed/` — CSV hasil penggabungan.
+- `metadata/` — checklist etika, provenance, dan metadata.
+- `docs/` — dokumentasi dan panduan finalisasi.
+
+## Status akuisisi dan scraping
+Output notebook yang tersimpan menunjukkan API Open-Meteo merespons HTTP 200 dan menghasilkan 31 baris data. Namun, file JSON mentah API dan CSV cuaca harian **belum terlihat di repository GitHub saat pemeriksaan**, sehingga keduanya belum dapat dianggap sudah terunggah.
+
+Pemeriksaan `https://bali.bps.go.id/robots.txt` menghasilkan **HTTP 403 Forbidden**. Aturan akses tidak dapat diverifikasi dan scraping tidak dilakukan. HTTP 403 bukan izin untuk melewati pembatasan server. Jangan menyatakan scraping berhasil.
 
 ## Cara menjalankan notebook
-1. Clone atau unduh repository sebagai ZIP.
-2. Ekstrak folder proyek, lalu buka notebook utama di Google Colab.
-3. Pastikan file dan folder proyek berada pada struktur yang sesuai dengan path di notebook.
-4. Jalankan sel secara berurutan dari awal sampai akhir (**Runtime → Run all**).
-5. Jika notebook meminta email institusi, masukkan alamat email institusi yang benar. Jangan memasukkan password, token, atau informasi rahasia.
-6. Periksa output setiap tahap: identifikasi dataset, estimasi storage, checklist etika, API, pemeriksaan akses web, merge, provenance, dan metadata.
-7. Simpan notebook setelah dijalankan agar output eksekusinya ikut tersimpan.
-8. Unggah kembali notebook beserta file hasil yang benar-benar dihasilkan ke repository.
-
-## Catatan penting: akses robots.txt BPS
-Pada pemeriksaan terakhir, permintaan ke `https://bali.bps.go.id/robots.txt` menerima **HTTP 403 Forbidden**. Artinya, aturan akses situs tidak dapat diverifikasi dari respons tersebut. Notebook diarahkan untuk mencatat respons aktual dan **tidak menjalankan scraping BPS ketika robots.txt tidak dapat diperiksa**.
-
-HTTP 403 bukan bukti bahwa scraping diizinkan dan bukan alasan untuk mencoba melewati pembatasan server. Jika akses tetap ditolak, dokumentasikan kendala tersebut dan konsultasikan kepada dosen apakah perlu memakai sumber alternatif yang diizinkan. Jangan menyatakan scraping berhasil jika tabel dan bukti hasilnya tidak benar-benar diperoleh.
+1. Unduh atau clone repository.
+2. Buka notebook utama di Google Colab.
+3. Pastikan struktur folder proyek tersedia.
+4. Jalankan sel secara berurutan melalui **Runtime → Run all**.
+5. Periksa setiap output dan pastikan file keluaran benar-benar terbentuk.
+6. Simpan notebook setelah eksekusi agar output terbaru ikut tersimpan.
+7. Unggah file keluaran aktual ke folder yang sesuai di repository.
 
 ## Pemeriksaan sebelum pengumpulan
-- [ ] Dataset utama minimal 100 baris dan deskripsi variabel sesuai isi file.
-- [ ] Identifikasi dataset dan estimasi kebutuhan penyimpanan dijelaskan dengan asumsi yang transparan.
-- [ ] Data Ethics Checklist 9 butir diisi berdasarkan bukti.
-- [ ] Akuisisi API menghasilkan minimal 30 baris dan file respons mentah tersimpan.
-- [ ] Pemeriksaan `robots.txt` serta status scraping didokumentasikan sesuai respons aktual.
-- [ ] Jika scraping tidak dapat dilakukan, kendala dan tindak lanjutnya dijelaskan; jangan membuat data scraping palsu.
-- [ ] Penggabungan dua sumber dilakukan hanya jika tingkat detail dan kunci penggabungannya sesuai.
-- [ ] Validasi hasil merge, pemeriksaan duplikasi, metadata, dan provenance dilakukan.
-- [ ] Notebook dijalankan dari awal sampai akhir dan disimpan dengan output.
-- [ ] File hasil yang dirujuk README benar-benar tersedia di repository.
+- [ ] Pastikan notebook dijalankan ulang dari awal sampai akhir tanpa error.
+- [ ] Simpan notebook terbaru beserta output eksekusinya.
+- [ ] Unggah JSON mentah Open-Meteo dan CSV cuaca harian jika file tersebut berhasil dibuat.
+- [ ] Pastikan provenance mencatat file yang benar-benar ada beserta ukuran dan hash yang sesuai.
+- [ ] Pastikan checklist etika CSV dan Excel konsisten.
+- [ ] Jelaskan kendala HTTP 403 pada pemeriksaan BPS secara jujur.
+- [ ] Pastikan semua tautan dan nama file pada dokumentasi sesuai isi repository.
 
-## Status pengerjaan
-Kode notebook dan dokumentasi telah mengalami perbaikan. Namun, **perbaikan kode belum sama dengan bukti bahwa seluruh tahapan berhasil dijalankan**. Status akhir API, scraping, merge, provenance, dan metadata harus mengikuti output eksekusi terbaru di Google Colab.
-
-**Prinsip pengerjaan:** hanya laporkan data, hasil, lisensi, dan proses yang benar-benar dapat dibuktikan dari sumber serta file yang tersedia.
+**Catatan:** angka dan status di README ini mengikuti output notebook yang tersimpan dan pemeriksaan file GitHub. Jika notebook dijalankan ulang dan menghasilkan perubahan, perbarui dokumentasi berdasarkan output terbaru.

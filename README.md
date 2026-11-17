@@ -1,48 +1,58 @@
 # UTS Data Acquisition & Management
-
 ## Akuisisi Data Akomodasi Pariwisata Kecamatan Ubud, Gianyar, Bali
 
-### Identitas
+### Identitas mahasiswa
 - **Nama:** Ni Putu Riska Pramesti Cahya Dewi
 - **NIM:** 2501010315
 - **Program Studi:** Informatika
 - **Perguruan Tinggi:** INSTIKI
 
-### Isi repository
-Proyek ini disusun untuk memenuhi UTS mata kuliah Data Acquisition & Management. Folder proyek utama berada di:
+## Deskripsi proyek
+Repository ini berisi pengerjaan Ujian Tengah Semester (UTS) mata kuliah **Data Acquisition & Management** dengan topik data akomodasi pariwisata di Kecamatan Ubud, Kabupaten Gianyar, Bali.
 
-`UTS_DAM_UBUD_RISKA_2501010315_FINAL/`
+Folder utama proyek: `UTS_DAM_UBUD_RISKA_2501010315_FINAL/`
 
-Di dalamnya tersedia:
-- Notebook utama untuk mengerjakan soal 1–5.
-- PDF publikasi BPS *Direktori Hotel Kabupaten Gianyar 2017* di `data/raw/`.
-- CSV ekstraksi direktori akomodasi di `data/interim/`.
-- Data Ethics Checklist dalam format CSV dan Excel.
-- Dokumentasi proyek dan dependensi Python.
+## Sumber dan gambaran data
+Dataset direktori akomodasi yang tersedia di repository memuat **326 baris dan 7 kolom**. Data tersebut merujuk pada tahun **2015**, berdasarkan publikasi BPS yang terbit pada **2017**. Dengan demikian, dataset ini merupakan data historis dan **bukan daftar akomodasi yang dipastikan masih aktif saat ini**.
 
-### Catatan penting tentang data utama
-CSV ekstraksi berisi **326 baris dan 7 kolom** berdasarkan file yang tersimpan di repository. Data direktori yang dianalisis merujuk pada **tahun 2015**, sedangkan publikasi BPS terbit pada tahun 2017. Karena itu, data ini bersifat historis dan tidak boleh disebut sebagai daftar akomodasi aktif saat ini.
+PDF publikasi disimpan di `data/raw/`, sedangkan CSV hasil ekstraksi tersedia di `data/interim/`. CSV merupakan data turunan untuk analisis. Publikasi sumber mencantumkan ketentuan penggunaan; ketersediaan unduhan publik tidak otomatis berarti seluruh isi bebas digunakan tanpa batas, terutama untuk tujuan komersial.
 
-PDF mentah disimpan sebagai sumber asli. CSV merupakan hasil ekstraksi untuk analisis; kolom nomor telepon tidak disertakan dalam CSV turunan. Publikasi BPS memuat pembatasan penggandaan/distribusi untuk tujuan komersial tanpa izin tertulis. Akses unduh publik tidak otomatis berarti lisensi terbuka tanpa batas.
+## Struktur repository
+- `UTS_DAM_UBUD_RISKA_2501010315.ipynb` — notebook utama pengerjaan soal.
+- `data/raw/` — dokumen sumber dan respons mentah yang benar-benar diperoleh.
+- `data/interim/` — dataset ekstraksi dan data perantara.
+- `data/processed/` — hasil pengolahan/penggabungan setelah notebook dijalankan.
+- `metadata/` — Data Ethics Checklist, provenance, dan metadata hasil.
+- `docs/` — dokumentasi, panduan, dan bukti proses scraping.
 
-### Cara menjalankan
-1. Unduh atau clone repository.
-2. Buka notebook `UTS_DAM_UBUD_RISKA_2501010315_FINAL/UTS_DAM_UBUD_RISKA_2501010315.ipynb` di Google Colab.
-3. Pastikan folder proyek diekstrak dan file CSV serta PDF berada pada struktur folder aslinya.
-4. Jalankan sel dari atas ke bawah.
-5. Masukkan email institusi mahasiswa yang benar saat diminta. Jangan memasukkan password atau token.
-6. Periksa hasil API, pemeriksaan `robots.txt`, scraping, merge, provenance, dan metadata.
-7. Simpan ulang notebook setelah semua sel berhasil dijalankan, sehingga output eksekusi ikut tersimpan.
-8. Periksa kembali seluruh file hasil sebelum mengumpulkan URL GitHub melalui ELSA.
+## Cara menjalankan notebook
+1. Clone atau unduh repository sebagai ZIP.
+2. Ekstrak folder proyek, lalu buka notebook utama di Google Colab.
+3. Pastikan file dan folder proyek berada pada struktur yang sesuai dengan path di notebook.
+4. Jalankan sel secara berurutan dari awal sampai akhir (**Runtime → Run all**).
+5. Jika notebook meminta email institusi, masukkan alamat email institusi yang benar. Jangan memasukkan password, token, atau informasi rahasia.
+6. Periksa output setiap tahap: identifikasi dataset, estimasi storage, checklist etika, API, pemeriksaan akses web, merge, provenance, dan metadata.
+7. Simpan notebook setelah dijalankan agar output eksekusinya ikut tersimpan.
+8. Unggah kembali notebook beserta file hasil yang benar-benar dihasilkan ke repository.
 
-### Persyaratan yang harus diverifikasi sebelum pengumpulan
-- Dataset utama minimal 100 baris.
-- Identifikasi dataset dan estimasi storage sesuai rumus soal.
-- Data Ethics Checklist 9 butir dengan bukti.
-- Akuisisi API menghasilkan minimal 30 baris.
-- Pemeriksaan `robots.txt` dan scraping halaman statis yang diizinkan, dengan bukti nyata.
-- Penggabungan minimal dua sumber memakai `merge` dan parameter `validate`.
-- Pemeriksaan duplikasi, file hasil penggabungan, metadata hasil, dan provenance (URL, tanggal akses, lisensi, MD5).
-- Notebook sudah dijalankan seluruhnya dan output tersimpan. Status saat ini: kode notebook sudah diperbaiki pada bagian estimasi storage dan URL scraping, tetapi eksekusi ulang di Google Colab tetap diperlukan untuk menghasilkan output serta file API, scraping, merge, dan provenance.
+## Catatan penting: akses robots.txt BPS
+Pada pemeriksaan terakhir, permintaan ke `https://bali.bps.go.id/robots.txt` menerima **HTTP 403 Forbidden**. Artinya, aturan akses situs tidak dapat diverifikasi dari respons tersebut. Notebook diarahkan untuk mencatat respons aktual dan **tidak menjalankan scraping BPS ketika robots.txt tidak dapat diperiksa**.
 
-**Jangan mengarang hasil API, scraping, lisensi, provenance, atau output notebook.** Jika sumber menolak akses atau tidak menyediakan tabel statis, catat keadaan sebenarnya dan selesaikan dengan sumber lain yang diizinkan atau konsultasi kepada dosen.
+HTTP 403 bukan bukti bahwa scraping diizinkan dan bukan alasan untuk mencoba melewati pembatasan server. Jika akses tetap ditolak, dokumentasikan kendala tersebut dan konsultasikan kepada dosen apakah perlu memakai sumber alternatif yang diizinkan. Jangan menyatakan scraping berhasil jika tabel dan bukti hasilnya tidak benar-benar diperoleh.
+
+## Pemeriksaan sebelum pengumpulan
+- [ ] Dataset utama minimal 100 baris dan deskripsi variabel sesuai isi file.
+- [ ] Identifikasi dataset dan estimasi kebutuhan penyimpanan dijelaskan dengan asumsi yang transparan.
+- [ ] Data Ethics Checklist 9 butir diisi berdasarkan bukti.
+- [ ] Akuisisi API menghasilkan minimal 30 baris dan file respons mentah tersimpan.
+- [ ] Pemeriksaan `robots.txt` serta status scraping didokumentasikan sesuai respons aktual.
+- [ ] Jika scraping tidak dapat dilakukan, kendala dan tindak lanjutnya dijelaskan; jangan membuat data scraping palsu.
+- [ ] Penggabungan dua sumber dilakukan hanya jika tingkat detail dan kunci penggabungannya sesuai.
+- [ ] Validasi hasil merge, pemeriksaan duplikasi, metadata, dan provenance dilakukan.
+- [ ] Notebook dijalankan dari awal sampai akhir dan disimpan dengan output.
+- [ ] File hasil yang dirujuk README benar-benar tersedia di repository.
+
+## Status pengerjaan
+Kode notebook dan dokumentasi telah mengalami perbaikan. Namun, **perbaikan kode belum sama dengan bukti bahwa seluruh tahapan berhasil dijalankan**. Status akhir API, scraping, merge, provenance, dan metadata harus mengikuti output eksekusi terbaru di Google Colab.
+
+**Prinsip pengerjaan:** hanya laporkan data, hasil, lisensi, dan proses yang benar-benar dapat dibuktikan dari sumber serta file yang tersedia.

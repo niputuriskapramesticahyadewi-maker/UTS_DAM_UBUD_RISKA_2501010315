@@ -1,0 +1,105 @@
+﻿no_sumber,desa,nama_akomodasi,alamat,klasifikasi,kecamatan,tahun_data,periode_cuaca,suhu_rata2_bulanan_c,total_curah_hujan_mm,angin_maks_kmh
+1,Desa_Ubud_2,Hotel Ubud Indah 1,Jl. Raya Ubud No. 1,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+2,Desa_Ubud_3,Hotel Ubud Indah 2,Jl. Raya Ubud No. 2,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+3,Desa_Ubud_4,Hotel Ubud Indah 3,Jl. Raya Ubud No. 3,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+4,Desa_Ubud_5,Hotel Ubud Indah 4,Jl. Raya Ubud No. 4,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+5,Desa_Ubud_1,Hotel Ubud Indah 5,Jl. Raya Ubud No. 5,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+6,Desa_Ubud_2,Hotel Ubud Indah 6,Jl. Raya Ubud No. 6,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+7,Desa_Ubud_3,Hotel Ubud Indah 7,Jl. Raya Ubud No. 7,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+8,Desa_Ubud_4,Hotel Ubud Indah 8,Jl. Raya Ubud No. 8,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+9,Desa_Ubud_5,Hotel Ubud Indah 9,Jl. Raya Ubud No. 9,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+10,Desa_Ubud_1,Hotel Ubud Indah 10,Jl. Raya Ubud No. 10,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+11,Desa_Ubud_2,Hotel Ubud Indah 11,Jl. Raya Ubud No. 11,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+12,Desa_Ubud_3,Hotel Ubud Indah 12,Jl. Raya Ubud No. 12,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+13,Desa_Ubud_4,Hotel Ubud Indah 13,Jl. Raya Ubud No. 13,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+14,Desa_Ubud_5,Hotel Ubud Indah 14,Jl. Raya Ubud No. 14,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+15,Desa_Ubud_1,Hotel Ubud Indah 15,Jl. Raya Ubud No. 15,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+16,Desa_Ubud_2,Hotel Ubud Indah 16,Jl. Raya Ubud No. 16,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+17,Desa_Ubud_3,Hotel Ubud Indah 17,Jl. Raya Ubud No. 17,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+18,Desa_Ubud_4,Hotel Ubud Indah 18,Jl. Raya Ubud No. 18,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+19,Desa_Ubud_5,Hotel Ubud Indah 19,Jl. Raya Ubud No. 19,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+20,Desa_Ubud_1,Hotel Ubud Indah 20,Jl. Raya Ubud No. 20,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+21,Desa_Ubud_2,Hotel Ubud Indah 21,Jl. Raya Ubud No. 21,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+22,Desa_Ubud_3,Hotel Ubud Indah 22,Jl. Raya Ubud No. 22,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+23,Desa_Ubud_4,Hotel Ubud Indah 23,Jl. Raya Ubud No. 23,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+24,Desa_Ubud_5,Hotel Ubud Indah 24,Jl. Raya Ubud No. 24,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+25,Desa_Ubud_1,Hotel Ubud Indah 25,Jl. Raya Ubud No. 25,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+26,Desa_Ubud_2,Hotel Ubud Indah 26,Jl. Raya Ubud No. 26,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+27,Desa_Ubud_3,Hotel Ubud Indah 27,Jl. Raya Ubud No. 27,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+28,Desa_Ubud_4,Hotel Ubud Indah 28,Jl. Raya Ubud No. 28,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+29,Desa_Ubud_5,Hotel Ubud Indah 29,Jl. Raya Ubud No. 29,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+30,Desa_Ubud_1,Hotel Ubud Indah 30,Jl. Raya Ubud No. 30,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+31,Desa_Ubud_2,Hotel Ubud Indah 31,Jl. Raya Ubud No. 31,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+32,Desa_Ubud_3,Hotel Ubud Indah 32,Jl. Raya Ubud No. 32,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+33,Desa_Ubud_4,Hotel Ubud Indah 33,Jl. Raya Ubud No. 33,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+34,Desa_Ubud_5,Hotel Ubud Indah 34,Jl. Raya Ubud No. 34,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+35,Desa_Ubud_1,Hotel Ubud Indah 35,Jl. Raya Ubud No. 35,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+36,Desa_Ubud_2,Hotel Ubud Indah 36,Jl. Raya Ubud No. 36,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+37,Desa_Ubud_3,Hotel Ubud Indah 37,Jl. Raya Ubud No. 37,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+38,Desa_Ubud_4,Hotel Ubud Indah 38,Jl. Raya Ubud No. 38,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+39,Desa_Ubud_5,Hotel Ubud Indah 39,Jl. Raya Ubud No. 39,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+40,Desa_Ubud_1,Hotel Ubud Indah 40,Jl. Raya Ubud No. 40,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+41,Desa_Ubud_2,Hotel Ubud Indah 41,Jl. Raya Ubud No. 41,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+42,Desa_Ubud_3,Hotel Ubud Indah 42,Jl. Raya Ubud No. 42,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+43,Desa_Ubud_4,Hotel Ubud Indah 43,Jl. Raya Ubud No. 43,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+44,Desa_Ubud_5,Hotel Ubud Indah 44,Jl. Raya Ubud No. 44,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+45,Desa_Ubud_1,Hotel Ubud Indah 45,Jl. Raya Ubud No. 45,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+46,Desa_Ubud_2,Hotel Ubud Indah 46,Jl. Raya Ubud No. 46,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+47,Desa_Ubud_3,Hotel Ubud Indah 47,Jl. Raya Ubud No. 47,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+48,Desa_Ubud_4,Hotel Ubud Indah 48,Jl. Raya Ubud No. 48,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+49,Desa_Ubud_5,Hotel Ubud Indah 49,Jl. Raya Ubud No. 49,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+50,Desa_Ubud_1,Hotel Ubud Indah 50,Jl. Raya Ubud No. 50,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+51,Desa_Ubud_2,Hotel Ubud Indah 51,Jl. Raya Ubud No. 51,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+52,Desa_Ubud_3,Hotel Ubud Indah 52,Jl. Raya Ubud No. 52,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+53,Desa_Ubud_4,Hotel Ubud Indah 53,Jl. Raya Ubud No. 53,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+54,Desa_Ubud_5,Hotel Ubud Indah 54,Jl. Raya Ubud No. 54,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+55,Desa_Ubud_1,Hotel Ubud Indah 55,Jl. Raya Ubud No. 55,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+56,Desa_Ubud_2,Hotel Ubud Indah 56,Jl. Raya Ubud No. 56,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+57,Desa_Ubud_3,Hotel Ubud Indah 57,Jl. Raya Ubud No. 57,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+58,Desa_Ubud_4,Hotel Ubud Indah 58,Jl. Raya Ubud No. 58,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+59,Desa_Ubud_5,Hotel Ubud Indah 59,Jl. Raya Ubud No. 59,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+60,Desa_Ubud_1,Hotel Ubud Indah 60,Jl. Raya Ubud No. 60,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+61,Desa_Ubud_2,Hotel Ubud Indah 61,Jl. Raya Ubud No. 61,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+62,Desa_Ubud_3,Hotel Ubud Indah 62,Jl. Raya Ubud No. 62,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+63,Desa_Ubud_4,Hotel Ubud Indah 63,Jl. Raya Ubud No. 63,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+64,Desa_Ubud_5,Hotel Ubud Indah 64,Jl. Raya Ubud No. 64,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+65,Desa_Ubud_1,Hotel Ubud Indah 65,Jl. Raya Ubud No. 65,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+66,Desa_Ubud_2,Hotel Ubud Indah 66,Jl. Raya Ubud No. 66,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+67,Desa_Ubud_3,Hotel Ubud Indah 67,Jl. Raya Ubud No. 67,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+68,Desa_Ubud_4,Hotel Ubud Indah 68,Jl. Raya Ubud No. 68,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+69,Desa_Ubud_5,Hotel Ubud Indah 69,Jl. Raya Ubud No. 69,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+70,Desa_Ubud_1,Hotel Ubud Indah 70,Jl. Raya Ubud No. 70,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+71,Desa_Ubud_2,Hotel Ubud Indah 71,Jl. Raya Ubud No. 71,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+72,Desa_Ubud_3,Hotel Ubud Indah 72,Jl. Raya Ubud No. 72,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+73,Desa_Ubud_4,Hotel Ubud Indah 73,Jl. Raya Ubud No. 73,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+74,Desa_Ubud_5,Hotel Ubud Indah 74,Jl. Raya Ubud No. 74,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+75,Desa_Ubud_1,Hotel Ubud Indah 75,Jl. Raya Ubud No. 75,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+76,Desa_Ubud_2,Hotel Ubud Indah 76,Jl. Raya Ubud No. 76,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+77,Desa_Ubud_3,Hotel Ubud Indah 77,Jl. Raya Ubud No. 77,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+78,Desa_Ubud_4,Hotel Ubud Indah 78,Jl. Raya Ubud No. 78,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+79,Desa_Ubud_5,Hotel Ubud Indah 79,Jl. Raya Ubud No. 79,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+80,Desa_Ubud_1,Hotel Ubud Indah 80,Jl. Raya Ubud No. 80,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+81,Desa_Ubud_2,Hotel Ubud Indah 81,Jl. Raya Ubud No. 81,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+82,Desa_Ubud_3,Hotel Ubud Indah 82,Jl. Raya Ubud No. 82,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+83,Desa_Ubud_4,Hotel Ubud Indah 83,Jl. Raya Ubud No. 83,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+84,Desa_Ubud_5,Hotel Ubud Indah 84,Jl. Raya Ubud No. 84,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+85,Desa_Ubud_1,Hotel Ubud Indah 85,Jl. Raya Ubud No. 85,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+86,Desa_Ubud_2,Hotel Ubud Indah 86,Jl. Raya Ubud No. 86,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+87,Desa_Ubud_3,Hotel Ubud Indah 87,Jl. Raya Ubud No. 87,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+88,Desa_Ubud_4,Hotel Ubud Indah 88,Jl. Raya Ubud No. 88,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+89,Desa_Ubud_5,Hotel Ubud Indah 89,Jl. Raya Ubud No. 89,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+90,Desa_Ubud_1,Hotel Ubud Indah 90,Jl. Raya Ubud No. 90,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+91,Desa_Ubud_2,Hotel Ubud Indah 91,Jl. Raya Ubud No. 91,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+92,Desa_Ubud_3,Hotel Ubud Indah 92,Jl. Raya Ubud No. 92,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+93,Desa_Ubud_4,Hotel Ubud Indah 93,Jl. Raya Ubud No. 93,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+94,Desa_Ubud_5,Hotel Ubud Indah 94,Jl. Raya Ubud No. 94,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+95,Desa_Ubud_1,Hotel Ubud Indah 95,Jl. Raya Ubud No. 95,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+96,Desa_Ubud_2,Hotel Ubud Indah 96,Jl. Raya Ubud No. 96,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+97,Desa_Ubud_3,Hotel Ubud Indah 97,Jl. Raya Ubud No. 97,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+98,Desa_Ubud_4,Hotel Ubud Indah 98,Jl. Raya Ubud No. 98,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+99,Desa_Ubud_5,Hotel Ubud Indah 99,Jl. Raya Ubud No. 99,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+100,Desa_Ubud_1,Hotel Ubud Indah 100,Jl. Raya Ubud No. 100,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+101,Desa_Ubud_2,Hotel Ubud Indah 101,Jl. Raya Ubud No. 101,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+102,Desa_Ubud_3,Hotel Ubud Indah 102,Jl. Raya Ubud No. 102,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+103,Desa_Ubud_4,Hotel Ubud Indah 103,Jl. Raya Ubud No. 103,Akomodasi Lainnya,Ubud,2015,2025-01,24.906451612903226,451.3,12.6
+104,Desa_Ubud_5,Hotel Ubud Indah 104,Jl. Raya Ubud No. 104,Non-Bintang,Ubud,2015,2025-01,24.906451612903226,451.3,12.6

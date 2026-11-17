@@ -1,0 +1,32 @@
+[
+    {
+        "sumber": "BPS Kabupaten Gianyar",
+        "jenis": "PDF",
+        "url": "https://gianyarkab.bps.go.id/",
+        "tanggal_akses": "2026-11-17",
+        "lisensi_atau_catatan": "Direktori hotel Kabupaten Gianyar tahun 2017",
+        "file": "UTS_DAM_UBUD_RISKA_2501010315_FINAL/data/raw/BPS5104-direktori_hotel_kabupaten_gianyar_2017.pdf",
+        "ukuran_byte": 4470662,
+        "md5": "6dc42b2ccc5890554675e01da96dfc6b"
+    },
+    {
+        "sumber": "BPS Kabupaten Gianyar",
+        "jenis": "CSV",
+        "url": "https://gianyarkab.bps.go.id/",
+        "tanggal_akses": "2026-11-17",
+        "lisensi_atau_catatan": "Hasil ekstraksi data akomodasi Ubud tahun 2015",
+        "file": "UTS_DAM_UBUD_RISKA_2501010315_FINAL/data/interim/akomodasi_ubud_bps_2015_ekstraksi.csv",
+        "ukuran_byte": 28115,
+        "md5": "212dca1eec4f439914dfb4b7b5bcfa0a"
+    },
+    {
+        "sumber": "Hasil pengolahan notebook",
+        "jenis": "CSV",
+        "url": "Data hasil pengolahan",
+        "tanggal_akses": "2026-11-17",
+        "lisensi_atau_catatan": "Penggabungan data akomodasi dan cuaca",
+        "file": "UTS_DAM_UBUD_RISKA_2501010315_FINAL/data/processed/akomodasi_cuaca_ubud.csv",
+        "ukuran_byte": 12508,
+        "md5": "d6aeeb293f08746ea3f0709b38330d82"
+    }
+]

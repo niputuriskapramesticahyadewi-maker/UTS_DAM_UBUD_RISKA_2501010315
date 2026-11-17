@@ -5,46 +5,45 @@
 **Program Studi:** Informatika — INSTIKI
 
 ## Tujuan
-Proyek ini disusun untuk memenuhi UTS mata kuliah Data Acquisition & Management. Notebook mengerjakan tahapan identifikasi data, estimasi storage, etika data, akuisisi API, pemeriksaan sumber web, pengolahan/penggabungan data, serta dokumentasi metadata dan provenance.
+Proyek ini disusun untuk memenuhi UTS mata kuliah Data Acquisition & Management. Tahapan meliputi identifikasi dataset, etika data, akuisisi API, pemeriksaan akses web, pengolahan dan penggabungan data, serta dokumentasi metadata dan provenance.
+
+## Ringkasan hasil yang tercatat
+- Dataset akomodasi: **104 baris, 7 kolom**; data tahun 2015 dari publikasi BPS tahun 2017.
+- API Open-Meteo: **31 observasi harian** untuk 1–31 Januari 2025.
+- Hasil merge: **104 baris, 11 kolom**; output notebook menunjukkan 104 cocok, 0 tidak cocok, dan 0 duplikasi.
+- Pemeriksaan `robots.txt` BPS: **HTTP 403 Forbidden**; akses tidak dapat diverifikasi dan scraping tidak dilakukan.
+
+Data cuaca 2025 hanya menjadi konteks wilayah dan tidak boleh ditafsirkan sebagai kondisi cuaca pada tahun 2015 atau kondisi spesifik setiap usaha akomodasi.
 
 ## Struktur folder
-- `data/raw/`: PDF publikasi BPS dan respons mentah yang benar-benar diperoleh.
-- `data/interim/`: CSV ekstraksi direktori dan data perantara.
-- `data/processed/`: hasil pengolahan yang dibuat oleh notebook jika tahap tersebut berhasil.
+- `data/raw/`: PDF publikasi BPS dan catatan berkas mentah.
+- `data/interim/`: CSV ekstraksi direktori akomodasi.
+- `data/processed/`: CSV hasil pengolahan/penggabungan.
 - `metadata/`: Data Ethics Checklist, provenance, dan metadata hasil.
-- `docs/`: dokumentasi dan bukti pemeriksaan akses/scraping.
+- `docs/`: dokumentasi dan panduan finalisasi.
 
-## Data utama
-CSV direktori akomodasi berisi 326 baris dan 7 kolom berdasarkan file yang tersedia di repository. Data direktori merujuk pada tahun 2015 dan diterbitkan dalam publikasi BPS tahun 2017. Data tersebut bersifat historis, bukan daftar usaha yang dipastikan masih aktif saat ini.
-
-Data cuaca Open-Meteo Januari 2025 merupakan data kontekstual cuaca, bukan data jumlah atau status operasional akomodasi. Data agregat tingkat kabupaten/kota tidak boleh diperlakukan sebagai data tingkat usaha di Ubud.
+## Status file keluaran API
+Notebook yang tersimpan menunjukkan respons API berhasil dan 31 baris cuaca terbentuk. Akan tetapi, saat repository diperiksa, file `data/raw/open_meteo_ubud_2025-01.json` dan `data/interim/cuaca_harian_ubud_2025-01.csv` belum ditemukan di GitHub. Unggah kedua file tersebut hanya setelah file aktual berhasil dibuat di Colab.
 
 ## Menjalankan notebook di Google Colab
 1. Unduh repository sebagai ZIP atau clone repository.
-2. Ekstrak folder proyek dan pastikan struktur folder tetap sama.
+2. Ekstrak folder proyek dengan struktur yang sama.
 3. Buka `UTS_DAM_UBUD_RISKA_2501010315.ipynb` di Google Colab.
-4. Jalankan sel secara berurutan dari awal sampai akhir melalui **Runtime → Run all**.
-5. Masukkan email institusi yang benar jika diminta. Jangan masukkan password, token, atau informasi rahasia.
-6. Periksa hasil setiap tahap dan pastikan file keluaran benar-benar terbentuk.
-7. Simpan atau unduh notebook sebagai `.ipynb` setelah eksekusi agar output ikut tersimpan.
-8. Unggah notebook hasil eksekusi dan file keluaran aktual ke GitHub.
+4. Jalankan **Runtime → Run all** dari awal sampai akhir.
+5. Periksa output setiap tahap dan pastikan file keluaran benar-benar terbentuk.
+6. Simpan notebook setelah eksekusi agar output ikut tersimpan.
+7. Unggah notebook dan file hasil aktual ke GitHub.
 
 ## Catatan akses dan scraping BPS
-Pada pemeriksaan terakhir, `https://bali.bps.go.id/robots.txt` memberikan respons **HTTP 403 Forbidden**. Respons ini berarti aturan akses tidak dapat diverifikasi. Dalam kondisi tersebut, scraping ke halaman BPS tidak dijalankan. Notebook harus menyimpan catatan status aktual dan melanjutkan tahapan lain yang tidak bergantung pada hasil scraping.
-
-Jangan mencoba melewati pembatasan server dan jangan membuat tabel atau bukti scraping pengganti. Jika tugas mewajibkan scraping, konsultasikan kendala ini kepada dosen dan minta persetujuan untuk memakai sumber alternatif yang aksesnya diizinkan.
+Pemeriksaan `https://bali.bps.go.id/robots.txt` pada output notebook menerima **HTTP 403 Forbidden**. Aturan akses tidak dapat diverifikasi, sehingga scraping tidak dijalankan. Jangan mencoba melewati pembatasan server atau membuat data/tabel scraping pengganti. Jika tugas mewajibkan scraping, konsultasikan kendala ini kepada dosen dan minta persetujuan untuk sumber alternatif.
 
 ## Pemeriksaan sebelum dikumpulkan
-- Dataset utama minimal 100 baris.
-- Data API minimal 30 baris, dengan file mentah dan hasil olahan.
-- Checklist etika diisi berdasarkan bukti.
-- Status pemeriksaan robots.txt dan scraping dicatat apa adanya.
-- Penggabungan hanya dilakukan pada sumber yang sesuai tingkat detail dan kunci datanya.
-- Validasi, pemeriksaan duplikasi, metadata, dan provenance diperiksa.
-- Notebook sudah dijalankan dari awal sampai akhir dan output tersimpan.
-- Semua file yang disebutkan dalam dokumentasi benar-benar tersedia di repository.
+- [ ] Notebook dijalankan ulang dari awal sampai akhir tanpa error.
+- [ ] Dataset utama dan hasil merge sesuai angka aktual.
+- [ ] File JSON mentah dan CSV harian API tersedia jika diklaim telah diunggah.
+- [ ] Checklist etika diperbarui berdasarkan bukti aktual.
+- [ ] Provenance berisi file, ukuran, tanggal, dan hash yang benar.
+- [ ] Status robots.txt dan scraping ditulis apa adanya.
+- [ ] Semua file yang disebutkan dokumentasi benar-benar tersedia.
 
-## Status
-Notebook dan dokumentasi telah diperbaiki, tetapi keberhasilan seluruh tahapan belum boleh diklaim sebelum output eksekusi terbaru diperiksa. Jika scraping BPS tetap terhalang HTTP 403, catat sebagai kendala akses dan konfirmasikan tindak lanjutnya kepada dosen.
-
-**Catatan:** jangan mengarang hasil API, scraping, merge, lisensi, provenance, atau output. Laporkan hanya hasil yang benar-benar diperoleh.
+**Penting:** perubahan dokumentasi tidak menggantikan eksekusi notebook. Laporkan hanya hasil yang dapat dibuktikan dari output dan file yang tersedia.

@@ -43,6 +43,6 @@ PDF mentah disimpan sebagai sumber asli. CSV merupakan hasil ekstraksi untuk ana
 - Pemeriksaan `robots.txt` dan scraping halaman statis yang diizinkan, dengan bukti nyata.
 - Penggabungan minimal dua sumber memakai `merge` dan parameter `validate`.
 - Pemeriksaan duplikasi, file hasil penggabungan, metadata hasil, dan provenance (URL, tanggal akses, lisensi, MD5).
-- Notebook sudah dijalankan seluruhnya dan output tersimpan.
+- Notebook sudah dijalankan seluruhnya dan output tersimpan. Status saat ini: kode notebook sudah diperbaiki pada bagian estimasi storage dan URL scraping, tetapi eksekusi ulang di Google Colab tetap diperlukan untuk menghasilkan output serta file API, scraping, merge, dan provenance.
 
 **Jangan mengarang hasil API, scraping, lisensi, provenance, atau output notebook.** Jika sumber menolak akses atau tidak menyediakan tabel statis, catat keadaan sebenarnya dan selesaikan dengan sumber lain yang diizinkan atau konsultasi kepada dosen.

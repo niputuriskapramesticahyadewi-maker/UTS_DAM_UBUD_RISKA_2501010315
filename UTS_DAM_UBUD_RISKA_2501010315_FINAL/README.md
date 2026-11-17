@@ -30,3 +30,10 @@
 
 ## Sebelum dikumpulkan
 Periksa bahwa notebook sudah memiliki output, folder `data/raw/` berisi sumber mentah, API menghasilkan minimal 30 baris, bukti robots dan hasil scraping tersedia, file hasil merge tersedia, duplikasi sudah diperiksa, serta provenance memuat URL, tanggal akses, lisensi, dan MD5 untuk setiap file sumber yang benar-benar diperoleh.
+
+
+## Status pengerjaan dan batas finalisasi
+
+Notebook telah diperbaiki untuk menyamakan penjelasan estimasi storage dengan perhitungan CSV, serta memperjelas kesimpulan dan batasan hasil. Panduan langkah demi langkah tersedia di [docs/PANDUAN_FINALISASI.md](docs/PANDUAN_FINALISASI.md).
+
+**Penting:** file notebook di GitHub saat ini adalah kode yang sudah diperbaiki, tetapi belum menjadi bukti eksekusi. Jalankan notebook di Google Colab, periksa output setiap tahap, lalu unggah kembali notebook dengan output dan file hasil yang benar-benar terbentuk. Jangan mengisi hasil API, scraping, merge, atau provenance secara manual.

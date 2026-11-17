@@ -1,55 +1,153 @@
 # UTS Data Acquisition & Management
 ## Akuisisi Data Akomodasi Pariwisata Kecamatan Ubud, Gianyar, Bali
 
-### Identitas mahasiswa
+### Identitas Mahasiswa
 - **Nama:** Ni Putu Riska Pramesti Cahya Dewi
 - **NIM:** 2501010315
 - **Program Studi:** Informatika
 - **Perguruan Tinggi:** INSTIKI
 
-## Deskripsi proyek
-Repository ini berisi pengerjaan UTS mata kuliah **Data Acquisition & Management**. Proyek mengolah direktori akomodasi Kecamatan Ubud dari publikasi BPS, mengambil data cuaca historis Open-Meteo sebagai konteks wilayah, memeriksa akses situs BPS, melakukan penggabungan data, dan menyusun metadata.
+---
 
-Folder utama: `UTS_DAM_UBUD_RISKA_2501010315_FINAL/`.
+## 1. Deskripsi Proyek
 
-## Ringkasan data berdasarkan output notebook
-- Dataset akomodasi: **104 baris dan 7 kolom**.
-- Periode data akomodasi: **2015** (publikasi BPS terbit 2017).
-- Data cuaca Open-Meteo: **31 observasi harian**, 1–31 Januari 2025.
-- Hasil penggabungan: **104 baris dan 11 kolom**.
-- Validasi merge pada output notebook: 104 baris cocok, 0 tidak cocok, dan 0 duplikasi.
+Proyek ini merupakan pengerjaan Ujian Tengah Semester (UTS) mata kuliah **Data Acquisition & Management**. Fokus proyek adalah mengolah data akomodasi pariwisata di Kecamatan Ubud, Kabupaten Gianyar, Bali, berdasarkan publikasi Badan Pusat Statistik (BPS).
 
-Data cuaca Januari 2025 merupakan konteks cuaca wilayah, bukan cuaca pada tahun pendataan akomodasi 2015 dan bukan atribut yang diukur per usaha.
+Proses pengerjaan meliputi pengumpulan dan ekstraksi data, pengambilan data cuaca historis melalui Open-Meteo API, pemeriksaan akses sumber web, pengolahan dan penggabungan data, serta penyusunan metadata dan dokumentasi.
 
-## Struktur repository
-- `UTS_DAM_UBUD_RISKA_2501010315_FINAL/UTS_DAM_UBUD_RISKA_2501010315.ipynb` — notebook utama.
-- `data/raw/` — PDF sumber BPS dan catatan file mentah.
-- `data/interim/` — CSV hasil ekstraksi direktori akomodasi.
-- `data/processed/` — CSV hasil penggabungan.
-- `metadata/` — checklist etika, provenance, dan metadata.
-- `docs/` — dokumentasi dan panduan finalisasi.
+Seluruh file utama proyek disimpan dalam folder:
 
-## Status akuisisi dan scraping
-Output notebook yang tersimpan menunjukkan API Open-Meteo merespons HTTP 200 dan menghasilkan 31 baris data. Namun, file JSON mentah API dan CSV cuaca harian **belum terlihat di repository GitHub saat pemeriksaan**, sehingga keduanya belum dapat dianggap sudah terunggah.
+`UTS_DAM_UBUD_RISKA_2501010315_FINAL/`
 
-Pemeriksaan `https://bali.bps.go.id/robots.txt` menghasilkan **HTTP 403 Forbidden**. Aturan akses tidak dapat diverifikasi dan scraping tidak dilakukan. HTTP 403 bukan izin untuk melewati pembatasan server. Jangan menyatakan scraping berhasil.
+## 2. Ringkasan Hasil Pengolahan Data
 
-## Cara menjalankan notebook
-1. Unduh atau clone repository.
-2. Buka notebook utama di Google Colab.
-3. Pastikan struktur folder proyek tersedia.
-4. Jalankan sel secara berurutan melalui **Runtime → Run all**.
-5. Periksa setiap output dan pastikan file keluaran benar-benar terbentuk.
-6. Simpan notebook setelah eksekusi agar output terbaru ikut tersimpan.
-7. Unggah file keluaran aktual ke folder yang sesuai di repository.
+Berdasarkan hasil yang tercatat pada notebook, diperoleh ringkasan berikut:
 
-## Pemeriksaan sebelum pengumpulan
-- [ ] Pastikan notebook dijalankan ulang dari awal sampai akhir tanpa error.
-- [ ] Simpan notebook terbaru beserta output eksekusinya.
-- [ ] Unggah JSON mentah Open-Meteo dan CSV cuaca harian jika file tersebut berhasil dibuat.
-- [ ] Pastikan provenance mencatat file yang benar-benar ada beserta ukuran dan hash yang sesuai.
-- [ ] Pastikan checklist etika CSV dan Excel konsisten.
-- [ ] Jelaskan kendala HTTP 403 pada pemeriksaan BPS secara jujur.
-- [ ] Pastikan semua tautan dan nama file pada dokumentasi sesuai isi repository.
+| Komponen | Hasil |
+|---|---|
+| Dataset akomodasi | 104 baris, 7 kolom |
+| Tahun data akomodasi | 2015 |
+| Tahun publikasi BPS | 2017 |
+| Data cuaca Open-Meteo | 31 observasi harian |
+| Periode data cuaca | 1–31 Januari 2025 |
+| Hasil penggabungan | 104 baris, 11 kolom |
+| Data berhasil dicocokkan | 104 baris |
+| Data tidak cocok | 0 baris |
+| Duplikasi setelah penggabungan | 0 baris |
 
-**Catatan:** angka dan status di README ini mengikuti output notebook yang tersimpan dan pemeriksaan file GitHub. Jika notebook dijalankan ulang dan menghasilkan perubahan, perbarui dokumentasi berdasarkan output terbaru.
+Penggabungan data dilakukan untuk menghubungkan informasi akomodasi dengan informasi cuaca berdasarkan wilayah Kecamatan Ubud.
+
+**Catatan:** Data akomodasi mengacu pada tahun 2015, sedangkan data cuaca berasal dari Januari 2025. Oleh karena itu, data cuaca hanya digunakan sebagai informasi kontekstual wilayah dan bukan sebagai kondisi cuaca pada tahun pendataan akomodasi.
+
+## 3. Struktur Repository
+
+Struktur folder utama proyek adalah sebagai berikut:
+
+```text
+UTS_DAM_UBUD_RISKA_2501010315/
+│
+├── README.md
+│
+└── UTS_DAM_UBUD_RISKA_2501010315_FINAL/
+    │
+    ├── README.md
+    ├── UTS_DAM_UBUD_RISKA_2501010315.ipynb
+    ├── requirements.txt
+    │
+    ├── data/
+    │   ├── raw/
+    │   ├── interim/
+    │   └── processed/
+    │
+    ├── metadata/
+    │   ├── data_ethics_checklist.csv
+    │   ├── data_ethics_checklist.xlsx
+    │   └── provenance.json
+    │
+    └── docs/
+        ├── dokumentasi.md
+        └── PANDUAN_FINALISASI.md
+```
+
+Keterangan folder:
+
+- **data/raw/**: menyimpan sumber data mentah, seperti dokumen PDF BPS.
+- **data/interim/**: menyimpan data hasil ekstraksi dan data sementara.
+- **data/processed/**: menyimpan dataset yang telah melalui proses pengolahan dan penggabungan.
+- **metadata/**: menyimpan checklist etika data dan informasi asal-usul data.
+- **docs/**: menyimpan dokumentasi dan panduan pengerjaan proyek.
+
+## 4. Sumber Data dan Proses Akuisisi
+
+### A. Data Akomodasi BPS
+
+Sumber data akomodasi berasal dari publikasi BPS berjudul *Direktori Hotel Kabupaten Gianyar 2017*. Data yang digunakan mengacu pada tahun 2015 dan diolah menjadi dataset dengan 104 baris dan 7 kolom.
+
+### B. Data Cuaca Open-Meteo
+
+Data cuaca diperoleh melalui Open-Meteo Historical Weather API untuk wilayah Ubud pada periode 1–31 Januari 2025.
+
+Berdasarkan output notebook, permintaan API berhasil mendapatkan respons HTTP 200 dengan total 31 observasi harian.
+
+### C. Pemeriksaan Akses Website BPS
+
+Pemeriksaan dilakukan terhadap alamat:
+
+`https://bali.bps.go.id/robots.txt`
+
+Hasil pemeriksaan menunjukkan HTTP 403 Forbidden. Karena aturan akses tidak dapat diverifikasi, proses scraping tidak dilanjutkan.
+
+Dengan demikian, proyek ini tidak mengklaim bahwa scraping website BPS berhasil dilakukan.
+
+## 5. Hasil Pengolahan dan Penggabungan
+
+Data akomodasi dan data cuaca diproses menggunakan Python dan Pandas. Setelah proses pengolahan, dilakukan penggabungan data berdasarkan informasi wilayah.
+
+Hasil pemeriksaan pada output notebook menunjukkan:
+- Jumlah data sebelum penggabungan: 104 baris.
+- Jumlah data setelah penggabungan: 104 baris.
+- Data yang berhasil dicocokkan: 104 baris.
+- Data yang tidak cocok: 0 baris.
+- Duplikasi: 0 baris.
+
+Hasil akhir pengolahan menghasilkan dataset sebanyak **104 baris dan 11 kolom**.
+
+## 6. Cara Menjalankan Notebook
+
+Untuk menjalankan proyek ini melalui Google Colab:
+
+1. Buka repository GitHub dan unduh atau clone repository.
+2. Buka folder `UTS_DAM_UBUD_RISKA_2501010315_FINAL/`.
+3. Buka file `UTS_DAM_UBUD_RISKA_2501010315.ipynb` menggunakan Google Colab.
+4. Pastikan file dan folder data yang dibutuhkan tersedia.
+5. Pilih menu **Runtime → Run all** untuk menjalankan seluruh sel notebook.
+6. Periksa hasil setiap proses dan pastikan tidak terdapat error.
+7. Simpan notebook setelah proses eksekusi selesai.
+
+## 7. Catatan dan Keterbatasan Proyek
+
+Beberapa hal yang perlu diperhatikan dalam proyek ini:
+
+- Data akomodasi merupakan data historis tahun 2015 sehingga belum tentu menggambarkan kondisi usaha akomodasi saat ini.
+- Data cuaca berasal dari Januari 2025 sehingga memiliki periode berbeda dengan data akomodasi.
+- Pemeriksaan `robots.txt` BPS menghasilkan HTTP 403 Forbidden sehingga scraping tidak dilakukan.
+- File JSON mentah Open-Meteo dan CSV cuaca harian belum terlihat di repository saat pemeriksaan. Kedua file tersebut perlu diunggah apabila berhasil dibuat di Google Colab.
+- Metadata provenance perlu disesuaikan dengan file yang benar-benar tersedia di repository.
+
+## 8. Checklist Sebelum Pengumpulan
+
+- [ ] Notebook sudah dijalankan dari awal hingga akhir.
+- [ ] Tidak terdapat error pada proses utama notebook.
+- [ ] Jumlah data sesuai dengan hasil pengolahan terbaru.
+- [ ] File sumber PDF dan dataset hasil pengolahan tersedia.
+- [ ] File keluaran API diunggah jika berhasil dibuat.
+- [ ] Checklist etika data tersedia dalam format CSV dan Excel.
+- [ ] Metadata provenance sesuai dengan file yang tersedia.
+- [ ] Dokumentasi sesuai dengan hasil aktual proyek.
+- [ ] Notebook sudah disimpan dengan output terbaru.
+
+---
+
+**Penutup**
+
+Proyek UTS Data Acquisition & Management ini menerapkan proses akuisisi, pengolahan, penggabungan, dan dokumentasi data menggunakan Python. Hasil pengerjaan diharapkan dapat menunjukkan pemahaman mengenai pengelolaan data, penggunaan API, validasi data, serta penerapan etika dalam proses akuisisi data.

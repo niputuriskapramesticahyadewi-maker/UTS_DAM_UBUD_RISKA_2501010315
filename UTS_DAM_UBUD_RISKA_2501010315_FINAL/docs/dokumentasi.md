@@ -7,7 +7,7 @@ Mengelola data direktori akomodasi Kecamatan Ubud dari publikasi BPS, melakukan 
 GitHub Actions berhasil dijalankan pada 19 November 2026. Laporan akuisisi terakhir mencatat:
 - BPS: 326 baris data, 7 kolom, 326 nama akomodasi unik, 8 desa.
 - Scraping BHA: 10 kartu properti Ubud dari halaman pertama. Halaman menampilkan 1–10 dari total 18; karena itu data scraping belum mencakup seluruh halaman.
-- OpenStreetMap: 897 objek akomodasi/pariwisata dalam bounding box perkiraan Ubud.
+- OpenStreetMap: 849 objek akomodasi/pariwisata dalam bounding box perkiraan Ubud.
 - Open-Meteo: 31 observasi harian untuk Januari 2025.
 - Merge dataset BPS dengan ringkasan cuaca: 326 cocok, 0 tidak cocok.
 
@@ -34,7 +34,7 @@ CSV BPS diperiksa jumlah baris, kolom, dan keunikan nama akomodasi. Ringkasan ak
 **Perbedaan periode:** dataset BPS merujuk tahun 2015, sedangkan cuaca berasal dari Januari 2025. Karena berbeda periode, cuaca tidak boleh ditafsirkan sebagai kondisi cuaca ketika direktori BPS dikumpulkan.
 
 ## Pengukuran storage
-Pengukuran menggunakan ukuran aktual file dari filesystem (`stat().st_size`). Pengukuran terakhir mencakup 16 file di folder `data/` dan `metadata/` dengan total 5.029.159 byte atau sekitar 4,80 MB. File storage measurement dan file provenance dikecualikan agar tidak terjadi perhitungan siklik. Kode, notebook, dan dokumentasi tidak dicampur ke ukuran dataset.
+Pengukuran menggunakan ukuran aktual file dari filesystem (`stat().st_size`). Pengukuran terakhir mencakup 14 file di folder `data/` dan `metadata/` dengan total 4.989.692 byte atau sekitar 4,76 MB. File storage measurement dan file provenance dikecualikan agar tidak terjadi perhitungan siklik. Kode, notebook, dan dokumentasi tidak dicampur ke ukuran dataset.
 
 ## Provenance
 `metadata/provenance.json` dan `metadata/provenance.csv` mencatat path, sumber, ukuran, waktu pencatatan, dan hash MD5 untuk file yang tersedia. `metadata/acquisition_report.json` mencatat status API/scraping dan jumlah data yang diperoleh.

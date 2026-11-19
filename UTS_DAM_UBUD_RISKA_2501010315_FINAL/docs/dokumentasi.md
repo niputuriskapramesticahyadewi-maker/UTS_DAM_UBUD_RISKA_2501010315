@@ -23,7 +23,7 @@ Script terlebih dahulu meminta `https://www.balihotelsassociation.com/robots.txt
 Hasil yang tercatat adalah 10 kartu pada halaman pertama. Situs menunjukkan 1–10 dari 18 properti, jadi hasil belum boleh disebut sebagai seluruh daftar 18 hotel. Data harga/rating adalah informasi yang ditampilkan saat akses dan dapat berubah.
 
 ### 3. OpenStreetMap Overpass API
-Script mengirim query objek dengan tag `tourism` untuk node, way, dan relation dalam bounding box perkiraan sekitar Ubud. Respons JSON mentah disimpan ke `data/raw/openstreetmap_akomodasi_ubud_raw.json`, lalu diolah menjadi CSV `data/interim/openstreetmap_akomodasi_ubud.csv`. Eksekusi terakhir memperoleh 897 objek. Jumlah ini adalah objek yang dipetakan di OSM dalam area query, bukan jumlah usaha aktif atau daftar resmi. Atribusi: © OpenStreetMap contributors, lisensi ODbL.
+Script mengirim query objek dengan tag `tourism` untuk node, way, dan relation dalam bounding box perkiraan sekitar Ubud. Respons JSON mentah disimpan ke `data/raw/openstreetmap_akomodasi_ubud_raw.json`, lalu diolah menjadi CSV `data/interim/openstreetmap_akomodasi_ubud.csv`. Eksekusi terakhir memperoleh 849 objek. Jumlah ini adalah objek yang dipetakan di OSM dalam area query, bukan jumlah usaha aktif atau daftar resmi. Atribusi: © OpenStreetMap contributors, lisensi ODbL.
 
 ### 4. Open-Meteo Historical Weather API
 Data cuaca diambil untuk koordinat Ubud, periode 1–31 Januari 2025. JSON mentah disimpan di `data/raw/open_meteo_ubud_2025-01.json` dan CSV turunannya di `data/interim/cuaca_harian_ubud_2025-01.csv`. Terdapat 31 observasi harian.

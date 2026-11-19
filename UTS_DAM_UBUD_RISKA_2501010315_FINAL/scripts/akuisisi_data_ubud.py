@@ -306,6 +306,8 @@ def write_measurement_and_provenance() -> None:
         # dan metadata. Notebook, kode, serta dokumentasi tidak dicampur ke ukuran dataset.
         if not (rel.startswith("data/") or rel.startswith("metadata/")):
             continue
+        if path.name in {"README.md", "README_raw.txt"}:
+            continue
         size = path.stat().st_size
         rows.append({
             "path": rel,

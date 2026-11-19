@@ -1,0 +1,33 @@
+{
+    "sumber_1": "https://data.ntbprov.go.id/dataset/9e270f88-a604-4640-a4f0-24c996122b92/show",
+    "sumber_2": "https://archive-api.open-meteo.com/v1/archive",
+    "kunci_merge": [
+        "Tahun",
+        "Bulan (angka)"
+    ],
+    "metode": "left merge",
+    "validate": "many_to_one",
+    "jumlah_baris_dataset_awal": 300,
+    "jumlah_baris_hasil_merge": 300,
+    "jumlah_cocok": 300,
+    "jumlah_tidak_cocok": 0,
+    "duplikasi_baris": 0,
+    "duplikasi_kunci": 0,
+    "baris_cuaca_tidak_lengkap": 0,
+    "kolom_hasil": [
+        "#",
+        "Kode provinsi",
+        "Nama Provinsi",
+        "Kategori Wisatawan",
+        "Jumlah (Orang)",
+        "Tahun",
+        "Bulan",
+        "suhu_rata_rata_c",
+        "curah_hujan_total_mm",
+        "kecepatan_angin_maks_kmh",
+        "jumlah_hari_data_cuaca"
+    ],
+    "catatan": "Cuaca dari 1 titik (Mataram), diagregasi bulanan; nilai cuaca sama untuk kedua kategori wisatawan.",
+    "atribusi_cuaca": "Weather data by Open-Meteo.com (CC BY 4.0)",
+    "tanggal_pembuatan_utc": "2026-11-19T11:20:29.059032+00:00"
+}

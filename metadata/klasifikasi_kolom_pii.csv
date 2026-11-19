@@ -1,0 +1,8 @@
+﻿,Kolom,Klasifikasi,Alasan
+0,#,Bukan PII,Nomor urut baris
+1,Kode provinsi,Quasi-identifier (geografis),"Level provinsi, 1 nilai tunggal (52), risiko re-identifikasi sangat rendah"
+2,Nama Provinsi,Quasi-identifier (geografis),Sama seperti di atas
+3,Kategori Wisatawan,Atribut kategorikal agregat,"Hanya 2 kategori, bukan atribut individu"
+4,Jumlah (Orang),Nilai agregat,"Puluhan ribu orang per baris, tidak ada individu"
+5,Tahun,Quasi-identifier (temporal),"Granularitas bulanan, agregat"
+6,Bulan,Quasi-identifier (temporal),"Granularitas bulanan, agregat"

@@ -1,0 +1,5 @@
+nama_file,url_sumber,tanggal_akses_utc,lisensi_keterangan,ukuran_byte,md5
+data_20261119132258-jumlah-kunjungan-wisatawan-berdasarkan-jenis-wisatawan.csv,https://data.ntbprov.go.id/dataset/9e270f88-a604-4640-a4f0-24c996122b92/show,2026-11-19T11:20:23.358413+00:00,"License Not Specified (Satu Data NTB); dipakai akademik nonkomersial, atribusi sumber",24386,1a33870860c8f9abed2e168f96f7adee
+open_meteo_ntb_historis.json,https://archive-api.open-meteo.com/v1/archive,2026-11-19T11:20:24.180295+00:00,CC BY 4.0 (Open-Meteo) https://open-meteo.com/en/license,128602,33d7ecb64e942bf5b3c4b9a1f89121d8
+wikipedia_robots.txt,https://id.wikipedia.org/robots.txt,2026-11-19T11:20:25.855269+00:00,"Aturan crawler, bukan lisensi konten",15801,8dd94bf3d01cbb25e0af4e64c0485433
+wikipedia_ntb.html,https://id.wikipedia.org/wiki/Daftar_kabupaten_dan_kota_di_Nusa_Tenggara_Barat,2026-11-19T11:20:27.391967+00:00,Tidak dinyatakan pada halaman; hanya tabel wilayah diambil untuk tugas akademik,121083,99edf6bda31f63a8877e69739f2f873c

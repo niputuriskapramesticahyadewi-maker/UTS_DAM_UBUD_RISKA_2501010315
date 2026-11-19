@@ -1,0 +1,14 @@
+{
+    "situs": "id.wikipedia.org",
+    "url_robots": "https://id.wikipedia.org/robots.txt",
+    "url_halaman": "https://id.wikipedia.org/wiki/Daftar_kabupaten_dan_kota_di_Nusa_Tenggara_Barat",
+    "http_status_robots": 200,
+    "waktu_pemeriksaan_utc": "2026-11-19T11:20:25.855269+00:00",
+    "md5_robots_txt": "8dd94bf3d01cbb25e0af4e64c0485433",
+    "user_agent": "UTS-DAM-NTB/1.0 (kontak: riska@mahasiswa.instiki.ac.id)",
+    "can_fetch_user_agent": true,
+    "can_fetch_wildcard": true,
+    "crawl_delay": null,
+    "jeda_yang_dipakai_detik": 1.5,
+    "hasil": "DIIZINKAN"
+}

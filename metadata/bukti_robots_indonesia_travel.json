@@ -1,0 +1,14 @@
+{
+    "situs": "indonesia.travel",
+    "url_robots": "https://www.indonesia.travel/robots.txt",
+    "url_halaman": "https://www.indonesia.travel/id/id/destination/bali-nusa-tenggara/west-nusa-tenggara",
+    "http_status_robots": 200,
+    "waktu_pemeriksaan_utc": "2026-11-19T07:22:57.922379+00:00",
+    "user_agent": "UTS-DAM-NTB/1.0 (kontak: nama_anda@mahasiswa.instiki.ac.id)",
+    "can_fetch_user_agent": true,
+    "can_fetch_wildcard": true,
+    "crawl_delay": null,
+    "jeda_yang_dipakai_detik": 1.5,
+    "isi_robots_txt": "User-agent: *\n\nSitemap: https://indonesia.travel/sitemap.xml",
+    "hasil": "DIIZINKAN"
+}

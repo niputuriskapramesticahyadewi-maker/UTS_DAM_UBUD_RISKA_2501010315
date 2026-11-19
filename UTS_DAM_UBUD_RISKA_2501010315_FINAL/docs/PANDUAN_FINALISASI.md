@@ -1,57 +1,44 @@
 # Panduan finalisasi sebelum pengumpulan
 
-Panduan ini mengikuti kondisi file yang terlihat di repository dan output notebook yang tersimpan. Lakukan pemeriksaan ulang setelah menjalankan notebook.
+## 1. Jalankan notebook terbaru
+1. Buka notebook UTS DAM dari repository di Google Colab.
+2. Pastikan PDF BPS dan CSV ekstraksi tersedia.
+3. Pilih **Runtime → Run all**.
+4. Pastikan setiap sel selesai tanpa error. Jika Overpass API atau API lain gagal, catat kegagalannya dan jangan mengarang hasil.
 
-## 1. Jalankan notebook
-1. Buka [notebook UTS DAM](../UTS_DAM_UBUD_RISKA_2501010315.ipynb) di GitHub.
-2. Pilih **Open in Colab** atau unduh notebook lalu unggah ke Colab.
-3. Pastikan folder proyek dan seluruh sumber data tersedia dengan struktur yang benar.
-4. Jalankan **Runtime → Run all** dari sel pertama sampai terakhir.
-5. Jika muncul error, perbaiki dahulu dan jangan menyatakan tugas selesai sebelum eksekusi berhasil.
+## 2. Cocokkan dataset BPS
+CSV yang saat ini terlihat di repository berisi **326 baris data dan 7 kolom**. Angka ini berasal dari pemeriksaan file CSV di repository, bukan angka yang diketik manual di notebook. Periksa kembali jumlah baris setelah notebook dijalankan.
 
-## 2. Cocokkan hasil utama
-Output notebook yang saat ini tersimpan mencatat:
-- Dataset akomodasi: 104 baris dan 7 kolom.
-- Data API Open-Meteo: 31 baris harian untuk 1–31 Januari 2025.
-- Hasil merge: 104 baris dan 11 kolom.
-- Baris cocok: 104; tidak cocok: 0; duplikasi: 0.
-- Pemeriksaan robots.txt BPS: HTTP 403; scraping tidak dilakukan.
+## 3. Periksa hasil akuisisi
+Jika API berhasil, notebook membuat:
+- `data/raw/open_meteo_ubud_2025-01.json`
+- `data/raw/wikipedia_ubud_search_raw.json`
+- `data/raw/openstreetmap_akomodasi_ubud_raw.json`
+- CSV turunan pada folder `data/interim/`
 
-Angka tersebut harus diperiksa kembali setelah **Run all**. Jangan menggunakan angka 326 baris karena tidak sesuai dengan output notebook yang diperiksa.
+Pastikan JSON mentah benar-benar berisi respons API dan bukan data contoh. Data OSM adalah data objek OpenStreetMap dalam bounding box perkiraan sekitar Ubud, bukan direktori resmi dan bukan scraping HTML.
 
-## 3. Periksa file keluaran
-File berikut belum terlihat di GitHub saat pemeriksaan dan perlu diunggah jika benar-benar terbentuk di Colab:
-- `data/raw/open_meteo_ubud_2025-01.json` — respons mentah API.
-- `data/interim/cuaca_harian_ubud_2025-01.csv` — data cuaca harian.
+## 4. Periksa storage dan provenance
+Pastikan `metadata/storage_measurement.csv` berisi ukuran aktual byte/KB/MB dari file yang sudah terbentuk. Pastikan `metadata/provenance.json` dan `metadata/provenance.csv` mencatat file yang benar-benar ada, ukuran aktual, dan hash MD5.
 
-File yang sudah terlihat di GitHub:
-- `data/raw/BPS5104-direktori_hotel_kabupaten_gianyar_2017.pdf`
-- `data/interim/akomodasi_ubud_bps_2015_ekstraksi.csv`
-- `data/processed/akomodasi_cuaca_ubud.csv`
-- `metadata/data_ethics_checklist.csv`
-- `metadata/data_ethics_checklist.xlsx`
-- `metadata/provenance.json`
+## 5. Status scraping BPS
+Pemeriksaan `https://bali.bps.go.id/robots.txt` sebelumnya menghasilkan HTTP 403. Scraping BPS tidak dilakukan karena aturan akses tidak dapat diverifikasi. Jangan mencoba melewati pembatasan. Bila dosen mewajibkan scraping, minta persetujuan sumber alternatif.
 
-Pastikan provenance mencatat file aktual, ukuran byte, tanggal akses, dan hash yang benar. Jangan menambahkan entri untuk file yang tidak ada.
+## 6. Perhatikan perbedaan periode
+Direktori BPS merujuk tahun 2015, sedangkan data cuaca diambil untuk Januari 2025. Jelaskan bahwa data cuaca hanya menjadi konteks wilayah, bukan cuaca saat pendataan akomodasi.
 
-## 4. Status scraping
-Pemeriksaan `https://bali.bps.go.id/robots.txt` menerima HTTP 403 Forbidden. Ini berarti aturan akses tidak dapat diverifikasi. Jangan melakukan scraping atau mencoba melewati pembatasan server dalam kondisi ini. Jika tugas mengharuskan scraping, sampaikan kendala kepada dosen dan minta persetujuan sumber alternatif yang diizinkan.
+## 7. Simpan dan unggah hasil
+1. Simpan notebook setelah seluruh sel selesai.
+2. Pastikan output eksekusi tersimpan di file `.ipynb`.
+3. Unggah JSON mentah, CSV hasil akuisisi, hasil merge, storage measurement, dan provenance yang berhasil dibuat.
+4. Buka kembali GitHub dan periksa apakah file benar-benar muncul.
 
-## 5. Simpan notebook dan unggah
-1. Setelah semua sel selesai, pilih **File → Save** atau **File → Download → Download .ipynb**.
-2. Pastikan notebook yang diunggah adalah notebook yang baru dijalankan dan outputnya tersimpan.
-3. Unggah file JSON dan CSV API jika berhasil dibuat.
-4. Periksa kembali struktur folder dan tautan GitHub.
-
-## 6. Checklist akhir
-- [ ] Run all selesai tanpa error.
-- [ ] Dataset utama 104 baris dan 7 kolom (atau angka terbaru yang benar-benar dihasilkan).
-- [ ] Data API minimal 30 baris.
-- [ ] File mentah API dan CSV harian diunggah jika tersedia.
-- [ ] Merge dan pemeriksaan duplikasi sesuai output aktual.
-- [ ] Checklist etika CSV dan Excel konsisten.
-- [ ] Provenance sesuai file aktual dan hash terbaru.
-- [ ] HTTP 403 dan status scraping dijelaskan dengan jujur.
-- [ ] Notebook tersimpan dengan output terbaru.
-
-**Catatan:** memperbaiki README dan dokumentasi tidak otomatis menjalankan notebook. Eksekusi dan pengunggahan keluaran tetap harus dilakukan di Google Colab.
+## Checklist
+- [ ] Notebook dijalankan dari awal sampai akhir.
+- [ ] CSV BPS tervalidasi dan analisis menggunakan data asli.
+- [ ] JSON mentah API disimpan sebelum ekstraksi CSV.
+- [ ] Data OpenStreetMap diberi atribusi ODbL dan keterbatasan cakupan dijelaskan.
+- [ ] Data cuaca dan data akomodasi dijelaskan berbeda periode.
+- [ ] Storage diukur dari ukuran file aktual.
+- [ ] Provenance berisi file yang tersedia, ukuran byte, dan hash.
+- [ ] Notebook terbaru beserta keluaran berhasil diunggah ke GitHub.

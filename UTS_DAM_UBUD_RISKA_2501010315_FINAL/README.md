@@ -11,7 +11,7 @@ Proyek ini mengolah direktori akomodasi Kecamatan Ubud dari publikasi BPS *Direk
 Eksekusi GitHub Actions berhasil pada 19 November 2026. Ringkasan dari `metadata/acquisition_report.json`:
 - Dataset BPS: **326 baris, 7 kolom**, 326 nama akomodasi unik, tersebar pada 8 desa.
 - Scraping BHA: **10 kartu hotel Ubud** berhasil diambil dari halaman pertama. Halaman menyatakan 1–10 dari 18, sehingga hasil ini adalah sampel halaman pertama, bukan seluruh 18 properti.
-- OpenStreetMap Overpass API: **849 objek** akomodasi pada bounding box perkiraan sekitar Ubud. Respons mentah disimpan sebagai JSON.
+- OpenStreetMap Overpass API: **897 objek** akomodasi pada bounding box perkiraan sekitar Ubud. Respons mentah disimpan sebagai JSON.
 - Open-Meteo Historical API: **31 observasi harian** untuk Januari 2025. Respons mentah disimpan sebagai JSON.
 - Penggabungan data BPS dengan ringkasan cuaca: **326 baris cocok, 0 tidak cocok**.
 
@@ -24,7 +24,7 @@ Eksekusi GitHub Actions berhasil pada 19 November 2026. Ringkasan dari `metadata
 ## Empat perbaikan berdasarkan masukan dosen
 - Analisis utama memakai dataset BPS hasil ekstraksi sumber publikasi, bukan nama hotel atau desa tiruan.
 - Scraping HTML benar-benar dilakukan pada halaman BHA setelah pemeriksaan robots.txt mengizinkan akses. HTML mentah disimpan dan 10 kartu hotel Ubud diekstrak ke CSV. Hasil ini terbatas pada halaman pertama dari 18 properti yang ditampilkan situs.
-- Storage diukur dari ukuran aktual file dengan `stat().st_size`, bukan estimasi manual. Pengukuran terakhir mencakup 23 file proyek dengan total **5.051.850 byte (sekitar 4,82 MB)**. File pengukuran, provenance, dan folder `.git` tidak dimasukkan dalam penjumlahan.
+- Storage diukur dari ukuran aktual file dengan `stat().st_size`, bukan estimasi manual. Pengukuran terakhir mencakup 16 file data dan metadata dengan total **5.051.850 byte (sekitar 4,82 MB)**. File pengukuran, provenance, dan folder `.git` tidak dimasukkan dalam penjumlahan.
 - JSON mentah OpenStreetMap dan Open-Meteo disimpan di `data/raw/` sebelum diekstrak menjadi CSV.
 
 ## Etika dan batasan

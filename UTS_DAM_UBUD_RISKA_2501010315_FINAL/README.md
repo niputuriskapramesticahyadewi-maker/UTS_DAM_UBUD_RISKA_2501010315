@@ -39,11 +39,13 @@ Data direktori BPS merujuk tahun 2015, sedangkan cuaca diambil untuk Januari 202
 - `metadata/storage_measurement.csv`
 - `metadata/provenance.json` dan `metadata/provenance.csv`
 
-## Cara menjalankan
-1. Buka notebook di Google Colab.
-2. Pilih **Runtime → Run all** dan tunggu seluruh sel selesai.
-3. Pastikan request API berhasil dan file keluaran benar-benar terbentuk.
-4. Periksa jumlah data, hasil validasi merge, ukuran storage, dan provenance.
-5. Simpan notebook dengan output terbaru, lalu unggah file keluaran yang dihasilkan ke GitHub.
+## Cara menjalankan langsung dari GitHub
+1. Buka tab **Actions** pada repository.
+2. Pilih workflow **Akuisisi Data Ubud**.
+3. Klik **Run workflow** lalu **Run workflow** sekali lagi.
+4. Buka proses yang berjalan dan pastikan status akhirnya **Success**.
+5. Setelah berhasil, periksa folder `data/raw/`, `data/interim/`, `data/processed/`, dan `metadata/`. Workflow akan menyimpan hasil aktual ke repository secara otomatis.
 
-**Catatan:** Perubahan kode di GitHub belum berarti notebook sudah dieksekusi. File JSON/CSV hasil API baru akan tersedia setelah notebook dijalankan dengan koneksi internet. Jangan membuat file JSON contoh atau menyatakan akuisisi berhasil sebelum respons API benar-benar diterima.
+Script mandiri: `scripts/akuisisi_data_ubud.py`. Untuk menjalankan lokal, instal dependensi dari `requirements.txt`, lalu jalankan script tersebut dengan Python 3.11 atau lebih baru. Notebook tetap tersedia sebagai dokumentasi/analisis, tetapi tidak perlu dijalankan di Colab untuk menjalankan workflow GitHub.
+
+**Catatan penting:** File keluaran API tidak boleh dianggap sudah tersedia sebelum workflow berhasil. Jika endpoint gagal, laporan akuisisi mencatat status gagal dan tidak membuat data contoh. Scraping halaman Bali Hotels Association hanya dilakukan jika `robots.txt` dapat dibaca dan secara eksplisit mengizinkan halaman tersebut. Jika tidak, statusnya dicatat dan scraping dilewati.

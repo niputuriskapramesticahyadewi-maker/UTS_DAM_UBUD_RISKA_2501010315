@@ -5,47 +5,46 @@
 **Program Studi:** Informatika — INSTIKI
 
 ## Tujuan
-Proyek ini mengolah direktori akomodasi Kecamatan Ubud dari publikasi BPS *Direktori Hotel Kabupaten Gianyar 2017* (direktori tahun 2015), kemudian menambahkan data cuaca historis dan data titik akomodasi dari OpenStreetMap sebagai sumber tambahan.
+Proyek ini mengolah direktori akomodasi Kecamatan Ubud dari publikasi BPS *Direktori Hotel Kabupaten Gianyar 2017* (direktori tahun 2015), melakukan scraping halaman daftar hotel Bali Hotels Association (BHA) yang diizinkan oleh robots.txt, serta mengakuisisi data tambahan dari OpenStreetMap dan Open-Meteo.
+
+## Hasil eksekusi yang tersimpan di GitHub
+Eksekusi GitHub Actions berhasil pada 19 November 2026. Ringkasan dari `metadata/acquisition_report.json`:
+- Dataset BPS: **326 baris, 7 kolom**, 326 nama akomodasi unik, tersebar pada 8 desa.
+- Scraping BHA: **10 kartu hotel Ubud** berhasil diambil dari halaman pertama. Halaman menyatakan 1–10 dari 18, sehingga hasil ini adalah sampel halaman pertama, bukan seluruh 18 properti.
+- OpenStreetMap Overpass API: **849 objek** akomodasi pada bounding box perkiraan sekitar Ubud. Respons mentah disimpan sebagai JSON.
+- Open-Meteo Historical API: **31 observasi harian** untuk Januari 2025. Respons mentah disimpan sebagai JSON.
+- Penggabungan data BPS dengan ringkasan cuaca: **326 baris cocok, 0 tidak cocok**.
 
 ## Sumber data
-1. **BPS:** PDF publikasi di `data/raw/BPS5104-direktori_hotel_kabupaten_gianyar_2017.pdf` dan hasil ekstraksi di `data/interim/akomodasi_ubud_bps_2015_ekstraksi.csv`. Pemeriksaan repository menunjukkan CSV memiliki 326 baris data dan 7 kolom.
-2. **Open-Meteo:** Historical Weather API untuk koordinat Ubud (-8.5069, 115.2625), periode 1–31 Januari 2025.
-3. **OpenStreetMap:** Overpass API mengambil objek dengan tag pariwisata/akomodasi pada bounding box perkiraan sekitar Ubud. Data ini merupakan sumber tambahan, bukan direktori resmi BPS dan bukan scraping HTML. Kelengkapan bergantung pada data yang dipetakan kontributor.
-4. **Wikipedia:** MediaWiki API untuk mencari artikel terkait Ubud. Hasilnya hanya metadata artikel tambahan, bukan daftar akomodasi.
+1. **BPS:** PDF publikasi di `data/raw/BPS5104-direktori_hotel_kabupaten_gianyar_2017.pdf` dan CSV hasil ekstraksi di `data/interim/akomodasi_ubud_bps_2015_ekstraksi.csv`.
+2. **Bali Hotels Association:** halaman `https://www.balihotelsassociation.com/our-hotel-and-resorts/?location=ubud`. Script memeriksa `robots.txt` terlebih dahulu. Pada eksekusi terakhir robots.txt dan halaman sama-sama merespons HTTP 200, lalu 10 kartu hotel dengan area Ubud diekstrak dari HTML.
+3. **OpenStreetMap:** Overpass API mengambil objek bertag akomodasi/pariwisata dalam bounding box perkiraan sekitar Ubud. Data ini merupakan sumber tambahan dan tidak dijamin mencakup semua akomodasi atau batas administratif persis.
+4. **Open-Meteo:** Historical Weather API untuk koordinat Ubud (-8.5069, 115.2625), periode 1–31 Januari 2025.
 
-## Perbaikan yang diterapkan pada notebook
-- Analisis utama memakai baris aktual CSV BPS, bukan nama hotel atau desa tiruan.
-- Ditambahkan akuisisi objek akomodasi dari OpenStreetMap Overpass API. Respons mentah disimpan sebagai JSON sebelum diekstrak menjadi CSV.
-- Respons mentah Open-Meteo dan MediaWiki API disimpan sebagai JSON, lalu diturunkan ke CSV.
-- Pengukuran storage menghitung ukuran file aktual menggunakan `stat().st_size`, dalam byte, KB, dan MB. File pengukuran dan provenance dikecualikan dari total agar tidak terjadi pengukuran siklik.
-- Provenance mencatat file yang benar-benar tersedia, ukuran byte, dan hash MD5.
+## Empat perbaikan berdasarkan masukan dosen
+- Analisis utama memakai dataset BPS hasil ekstraksi sumber publikasi, bukan nama hotel atau desa tiruan.
+- Scraping HTML benar-benar dilakukan pada halaman BHA setelah pemeriksaan robots.txt mengizinkan akses. HTML mentah disimpan dan 10 kartu hotel Ubud diekstrak ke CSV. Hasil ini terbatas pada halaman pertama dari 18 properti yang ditampilkan situs.
+- Storage diukur dari ukuran aktual file dengan `stat().st_size`, bukan estimasi manual. Pengukuran terakhir mencakup 23 file proyek dengan total **5.051.850 byte (sekitar 4,82 MB)**. File pengukuran, provenance, dan folder `.git` tidak dimasukkan dalam penjumlahan.
+- JSON mentah OpenStreetMap dan Open-Meteo disimpan di `data/raw/` sebelum diekstrak menjadi CSV.
 
-## Etika dan batasan scraping
-Pemeriksaan `https://bali.bps.go.id/robots.txt` sebelumnya menghasilkan HTTP 403. Karena aturan akses tidak dapat diverifikasi, notebook tidak melakukan scraping halaman BPS dan tidak mencoba melewati pembatasan. OpenStreetMap diakses melalui Overpass API sesuai dokumentasi API, bukan dengan mengambil/menyalin halaman HTML. Cantumkan atribusi **© OpenStreetMap contributors** dan lisensi **ODbL**. [Panduan Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide). [Atribusi OpenStreetMap](https://www.openstreetmap.org/copyright).
+## Etika dan batasan
+- BPS: pemeriksaan `https://bali.bps.go.id/robots.txt` sebelumnya menghasilkan HTTP 403. Karena aturan akses tidak dapat diverifikasi, scraping BPS tidak dilakukan dan pembatasan tidak dilewati.
+- BHA: pada eksekusi terakhir `robots.txt` dan halaman target merespons HTTP 200; script hanya melakukan scraping jika robots.txt dapat dibaca dan mengizinkan halaman.
+- OpenStreetMap: cantumkan atribusi **© OpenStreetMap contributors** dan lisensi **ODbL**. Data berasal dari bounding box perkiraan, bukan batas administratif resmi.
+- Data BPS merujuk tahun 2015 sedangkan cuaca merujuk Januari 2025. Cuaca hanya menjadi konteks wilayah, bukan cuaca pada saat pendataan BPS.
+- Data OSM dan hasil scraping web merupakan data tambahan dan tidak menggantikan dataset historis BPS sebagai dataset utama.
 
-## Perbedaan periode
-Data direktori BPS merujuk tahun 2015, sedangkan cuaca diambil untuk Januari 2025. Karena periodenya berbeda, cuaca hanya menjadi konteks wilayah dan bukan kondisi cuaca saat pendataan akomodasi.
+## File keluaran penting
+- `data/raw/bali_hotels_association_ubud.html` — HTML mentah halaman BHA.
+- `data/raw/openstreetmap_akomodasi_ubud_raw.json` — JSON mentah Overpass.
+- `data/raw/open_meteo_ubud_2025-01.json` — JSON mentah Open-Meteo.
+- `data/interim/bali_hotels_association_ubud.csv` — hasil scraping 10 kartu hotel Ubud.
+- `data/interim/openstreetmap_akomodasi_ubud.csv` — 849 objek OSM.
+- `data/interim/cuaca_harian_ubud_2025-01.csv` — 31 observasi cuaca.
+- `data/processed/akomodasi_cuaca_ubud.csv` — hasil penggabungan 326 baris.
+- `metadata/acquisition_report.json` — status dan jumlah hasil akuisisi.
+- `metadata/storage_measurement.csv` — ukuran aktual file.
+- `metadata/provenance.json` dan `metadata/provenance.csv` — asal, ukuran, dan hash MD5 file.
 
-## Keluaran setelah notebook dijalankan
-- `data/raw/open_meteo_ubud_2025-01.json`
-- `data/raw/wikipedia_ubud_search_raw.json`
-- `data/raw/openstreetmap_akomodasi_ubud_raw.json`
-- `data/interim/cuaca_harian_ubud_2025-01.csv`
-- `data/interim/wikipedia_ubud_articles.csv`
-- `data/interim/openstreetmap_akomodasi_ubud.csv`
-- `data/interim/analisis_akomodasi_per_desa.csv`
-- `data/interim/analisis_akomodasi_per_klasifikasi.csv`
-- `data/processed/akomodasi_cuaca_ubud.csv`
-- `metadata/storage_measurement.csv`
-- `metadata/provenance.json` dan `metadata/provenance.csv`
-
-## Cara menjalankan langsung dari GitHub
-1. Buka tab **Actions** pada repository.
-2. Pilih workflow **Akuisisi Data Ubud**.
-3. Klik **Run workflow** lalu **Run workflow** sekali lagi.
-4. Buka proses yang berjalan dan pastikan status akhirnya **Success**.
-5. Setelah berhasil, periksa folder `data/raw/`, `data/interim/`, `data/processed/`, dan `metadata/`. Workflow akan menyimpan hasil aktual ke repository secara otomatis.
-
-Script mandiri: `scripts/akuisisi_data_ubud.py`. Untuk menjalankan lokal, instal dependensi dari `requirements.txt`, lalu jalankan script tersebut dengan Python 3.11 atau lebih baru. Notebook tetap tersedia sebagai dokumentasi/analisis, tetapi tidak perlu dijalankan di Colab untuk menjalankan workflow GitHub.
-
-**Catatan penting:** File keluaran API tidak boleh dianggap sudah tersedia sebelum workflow berhasil. Jika endpoint gagal, laporan akuisisi mencatat status gagal dan tidak membuat data contoh. Scraping halaman Bali Hotels Association hanya dilakukan jika `robots.txt` dapat dibaca dan secara eksplisit mengizinkan halaman tersebut. Jika tidak, statusnya dicatat dan scraping dilewati.
+## Menjalankan ulang dari GitHub
+Buka tab **Actions**, pilih workflow **Akuisisi Data Ubud**, lalu klik **Run workflow**. Workflow akan menginstal dependensi, menjalankan script akuisisi, mengolah dataset, dan menyimpan hasil ke repository. Periksa status akhir workflow dan `metadata/acquisition_report.json`; jangan menganggap akuisisi berhasil jika status API menunjukkan gagal.

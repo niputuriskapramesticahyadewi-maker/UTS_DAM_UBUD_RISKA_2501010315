@@ -82,31 +82,50 @@ def check_robots_and_scrape_bha() -> dict:
 
         soup = BeautifulSoup(response.text, "html.parser")
         records = []
-        seen = set()
-        # Capture visible hotel/resort headings and their nearby text/link.
-        for heading in soup.find_all(["h2", "h3", "h4", "h5"]):
+        # Halaman BHA menampilkan kartu properti pada elemen .hotel-item.
+        # Ambil nama, area, rating bintang, website, dan lokasi dari kartu tersebut.
+        for card in soup.select(".hotel-item"):
+            heading = card.select_one(".hotel-item-header h6")
+            if not heading:
+                continue
             name = " ".join(heading.get_text(" ", strip=True).split())
-            if not name or name.lower() in seen:
+            area_el = card.select_one(".hotel-item-header .area-name")
+            area = " ".join(area_el.get_text(" ", strip=True).split()) if area_el else ""
+            # Pastikan hasil benar-benar milik area Ubud, bukan menu navigasi atau hotel Bali lain.
+            if area.strip().casefold() != "ubud":
                 continue
-            parent = heading.parent
-            block_text = " ".join(parent.get_text(" ", strip=True).split()) if parent else name
-            link = parent.find("a", href=True) if parent else None
-            href = urljoin(page_url, link["href"]) if link else ""
-            # Keep only headings with accommodation context or an outgoing link.
-            if len(name) < 3 or (not href and "ubud" not in block_text.lower()):
-                continue
-            seen.add(name.lower())
+            website_link = None
+            for link in card.select(".hotel-item-reservation a[href]"):
+                href = link.get("href", "")
+                if href.startswith("http") and "google.com/maps" not in href and "wa.me/" not in href:
+                    if "facebook.com" not in href and "instagram.com" not in href:
+                        website_link = href
+                        break
+            location_link = next(
+                (link.get("href", "") for link in card.select(".hotel-item-reservation a[href]")
+                 if "google.com/maps" in link.get("href", "")),
+                ""
+            )
+            rating = len(card.select(".hotel-rate .imoon-star"))
+            price_el = card.select_one(".hotel-item-price .price")
+            price = " ".join(price_el.get_text(" ", strip=True).split()) if price_el else ""
             records.append({
                 "nama_akomodasi": name,
-                "informasi_ringkas": block_text[:500],
-                "url": href,
+                "area": area,
+                "rating_bintang_tertera": rating,
+                "harga_tertera_idr": price,
+                "url_website": website_link or "",
+                "url_lokasi": location_link,
                 "sumber": page_url,
                 "tanggal_akses_utc": datetime.now(timezone.utc).isoformat()
             })
 
         result["records"] = len(records)
-        result["status"] = "SCRAPED" if records else "PAGE_READ_NO_MATCHING_RECORDS"
-        result["reason"] = "HTML diproses dengan BeautifulSoup; hanya data yang terlihat pada halaman."
+        result["status"] = "SCRAPED" if records else "PAGE_READ_NO_UBUD_PROPERTY_CARDS"
+        result["reason"] = (
+            "Data diekstrak dari kartu .hotel-item dan difilter area Ubud; "
+            "jumlah sesuai halaman yang ditampilkan, bukan total semua hotel di Bali."
+        )
         pd.DataFrame(records).to_csv(
             INTERIM / "bali_hotels_association_ubud.csv",
             index=False, encoding="utf-8-sig"

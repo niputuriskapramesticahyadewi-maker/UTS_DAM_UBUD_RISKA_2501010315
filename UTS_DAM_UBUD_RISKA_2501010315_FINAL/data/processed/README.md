@@ -1,6 +1,6 @@
-Folder ini menampung keluaran hasil merge yang dibuat oleh notebook setelah eksekusi berhasil.
+Folder ini menampung hasil pengolahan yang dibuat oleh script akuisisi melalui GitHub Actions.
 
-File hasil yang diharapkan:
-- `akomodasi_cuaca_ubud.csv`
+File hasil yang tersedia:
+- `akomodasi_cuaca_ubud.csv` — hasil penggabungan 326 baris data akomodasi BPS dengan ringkasan cuaca Januari 2025. Eksekusi terakhir mencatat 326 baris cocok dan 0 tidak cocok.
 
-Jangan membuat atau mengisi file hasil secara manual dengan data contoh. Jalankan notebook agar file dibuat dari sumber yang benar-benar diambil.
+Perhatikan bahwa dataset akomodasi BPS merujuk tahun 2015, sedangkan cuaca berasal dari Januari 2025. Cuaca hanya menjadi konteks wilayah, bukan kondisi cuaca saat pendataan BPS.

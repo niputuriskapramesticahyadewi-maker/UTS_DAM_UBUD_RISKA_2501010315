@@ -14,8 +14,10 @@ Dataset BPS divalidasi dan dianalisis langsung dari CSV sumber. Notebook menghit
 
 Data OpenStreetMap diambil melalui Overpass API, respons JSON disimpan mentah terlebih dahulu, kemudian elemen `node`, `way`, dan `relation` diekstrak ke CSV. Hasil OSM adalah objek yang tercatat di OpenStreetMap, bukan daftar usaha yang dijamin lengkap atau masih aktif. Bounding box yang digunakan merupakan perkiraan area Ubud, bukan batas administratif resmi Kecamatan Ubud.
 
-## Pemeriksaan scraping BPS
-Pemeriksaan `https://bali.bps.go.id/robots.txt` pada eksekusi sebelumnya menghasilkan HTTP 403 Forbidden. Karena aturan akses tidak dapat diverifikasi, scraping halaman BPS tidak dilakukan dan pembatasan server tidak dicoba untuk dilewati. Jika dosen mewajibkan scraping dari situs BPS, mintalah arahan atau persetujuan sumber alternatif yang diperbolehkan.
+## Proses scraping dan etika akses
+Pemeriksaan `https://bali.bps.go.id/robots.txt` pada pemeriksaan sebelumnya menghasilkan HTTP 403 Forbidden. Karena aturan akses BPS tidak dapat diverifikasi, scraping halaman BPS tidak dilakukan dan pembatasan server tidak dicoba untuk dilewati.
+
+Sebagai sumber halaman web alternatif, script memeriksa `robots.txt` Bali Hotels Association (BHA) sebelum mengakses direktori hotel/resor Ubud. Script hanya melakukan request halaman dan parsing HTML dengan BeautifulSoup jika `robots.txt` dapat dibaca dan mengizinkan URL target. Jika `robots.txt` tidak tersedia, akses dilarang, atau request gagal, proses scraping dilewati dan alasannya dicatat di `metadata/acquisition_report.json`. Hasil scraping disimpan sebagai HTML mentah dan CSV turunan hanya jika akses berhasil. Jangan menganggap scraping berhasil sebelum status laporan menunjukkan `SCRAPED`.
 
 ## Pengukuran storage dan provenance
 Notebook mengukur ukuran file yang benar-benar ada menggunakan `stat().st_size`, lalu menyimpan ukuran byte, KB, dan MB dalam `metadata/storage_measurement.csv`. File pengukuran dan provenance dikecualikan dari perhitungan agar tidak terjadi siklus. Provenance mencatat ukuran byte dan hash MD5 file yang tersedia; entri file yang belum terbentuk dilewati.

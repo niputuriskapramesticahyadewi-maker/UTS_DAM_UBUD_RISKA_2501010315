@@ -13,7 +13,7 @@ Notebook tetap menjadi bahan dokumentasi dan analisis. Proses akuisisi otomatis 
 CSV yang saat ini terlihat di repository berisi **326 baris data dan 7 kolom**. Angka ini berasal dari pemeriksaan file CSV di repository, bukan angka yang diketik manual di notebook. Periksa kembali jumlah baris setelah notebook dijalankan.
 
 ## 3. Periksa hasil akuisisi
-Jika API berhasil, notebook membuat:
+Jika workflow berhasil, script membuat keluaran berikut sesuai API yang berhasil diakses:
 - `data/raw/open_meteo_ubud_2025-01.json`
 - `data/raw/wikipedia_ubud_search_raw.json`
 - `data/raw/openstreetmap_akomodasi_ubud_raw.json`

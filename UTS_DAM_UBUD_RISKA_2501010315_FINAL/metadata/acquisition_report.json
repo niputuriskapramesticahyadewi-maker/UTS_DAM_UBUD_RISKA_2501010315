@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-19T03:31:41.179272+00:00",
+  "generated_at_utc": "2026-11-19T03:33:50.067608+00:00",
   "web_scraping": {
     "source": "Bali Hotels Association",
     "page_url": "https://www.balihotelsassociation.com/our-hotel-and-resorts/?location=ubud",
@@ -7,13 +7,13 @@
     "status": "SCRAPED",
     "http_status": 200,
     "robots_http_status": 200,
-    "records": 2,
-    "reason": "HTML diproses dengan BeautifulSoup; hanya data yang terlihat pada halaman."
+    "records": 10,
+    "reason": "Data diekstrak dari kartu .hotel-item dan difilter area Ubud; jumlah sesuai halaman yang ditampilkan, bukan total semua hotel di Bali."
   },
   "openstreetmap": {
     "status": "SUCCESS",
     "count": 849,
-    "timestamp_osm_base": "2026-11-19T03:30:47Z",
+    "timestamp_osm_base": "2026-11-19T03:32:56Z",
     "endpoint": "https://overpass-api.de/api/interpreter",
     "failed_endpoints": []
   },

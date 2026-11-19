@@ -1,0 +1,212 @@
+[
+  {
+    "path": "README.md",
+    "nama_file": "README.md",
+    "kategori": "root",
+    "ukuran_byte": 4351,
+    "ukuran_kb": 4.249,
+    "ukuran_mb": 0.004149,
+    "md5": "f31732f5a27305d225d5494746bb7c1c",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.392983+00:00"
+  },
+  {
+    "path": "UTS_DAM_UBUD_RISKA_2501010315.ipynb",
+    "nama_file": "UTS_DAM_UBUD_RISKA_2501010315.ipynb",
+    "kategori": "root",
+    "ukuran_byte": 32160,
+    "ukuran_kb": 31.406,
+    "ukuran_mb": 0.03067,
+    "md5": "ee6d43d38f92e8462191ca25376ab825",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.393039+00:00"
+  },
+  {
+    "path": "data/interim/akomodasi_ubud_bps_2015_ekstraksi.csv",
+    "nama_file": "akomodasi_ubud_bps_2015_ekstraksi.csv",
+    "kategori": "data",
+    "ukuran_byte": 28115,
+    "ukuran_kb": 27.456,
+    "ukuran_mb": 0.026813,
+    "md5": "212dca1eec4f439914dfb4b7b5bcfa0a",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.393083+00:00"
+  },
+  {
+    "path": "data/interim/analisis_akomodasi_per_desa.csv",
+    "nama_file": "analisis_akomodasi_per_desa.csv",
+    "kategori": "data",
+    "ukuran_byte": 109,
+    "ukuran_kb": 0.106,
+    "ukuran_mb": 0.000104,
+    "md5": "f3585df85dfbf142b5fc382873c74e87",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.393097+00:00"
+  },
+  {
+    "path": "data/interim/analisis_akomodasi_per_klasifikasi.csv",
+    "nama_file": "analisis_akomodasi_per_klasifikasi.csv",
+    "kategori": "data",
+    "ukuran_byte": 174,
+    "ukuran_kb": 0.17,
+    "ukuran_mb": 0.000166,
+    "md5": "50d8ea4cff75fce8969cac08e652711d",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.393111+00:00"
+  },
+  {
+    "path": "data/interim/bali_hotels_association_ubud.csv",
+    "nama_file": "bali_hotels_association_ubud.csv",
+    "kategori": "data",
+    "ukuran_byte": 713,
+    "ukuran_kb": 0.696,
+    "ukuran_mb": 0.00068,
+    "md5": "a34749e80411ef1044e0d01564bcf34a",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.393125+00:00"
+  },
+  {
+    "path": "data/interim/cuaca_harian_ubud_2025-01.csv",
+    "nama_file": "cuaca_harian_ubud_2025-01.csv",
+    "kategori": "data",
+    "ukuran_byte": 839,
+    "ukuran_kb": 0.819,
+    "ukuran_mb": 0.0008,
+    "md5": "dfa651fad2b06e148bfcf4ab53dc547b",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.393138+00:00"
+  },
+  {
+    "path": "data/processed/README.md",
+    "nama_file": "README.md",
+    "kategori": "data",
+    "ukuran_byte": 300,
+    "ukuran_kb": 0.293,
+    "ukuran_mb": 0.000286,
+    "md5": "f0fa47d4cd9e68082ba5d1d6d3316651",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.393164+00:00"
+  },
+  {
+    "path": "data/processed/akomodasi_cuaca_ubud.csv",
+    "nama_file": "akomodasi_cuaca_ubud.csv",
+    "kategori": "data",
+    "ukuran_byte": 40574,
+    "ukuran_kb": 39.623,
+    "ukuran_mb": 0.038694,
+    "md5": "8ba38602601195717f7450f46a810dd3",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.393218+00:00"
+  },
+  {
+    "path": "data/raw/BPS5104-direktori_hotel_kabupaten_gianyar_2017.pdf",
+    "nama_file": "BPS5104-direktori_hotel_kabupaten_gianyar_2017.pdf",
+    "kategori": "data",
+    "ukuran_byte": 4470662,
+    "ukuran_kb": 4365.881,
+    "ukuran_mb": 4.263556,
+    "md5": "6dc42b2ccc5890554675e01da96dfc6b",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.399436+00:00"
+  },
+  {
+    "path": "data/raw/README_raw.txt",
+    "nama_file": "README_raw.txt",
+    "kategori": "data",
+    "ukuran_byte": 641,
+    "ukuran_kb": 0.626,
+    "ukuran_mb": 0.000611,
+    "md5": "ed41cf8920ba989ac95e8fcefafd57c8",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.399457+00:00"
+  },
+  {
+    "path": "data/raw/bali_hotels_association_ubud.html",
+    "nama_file": "bali_hotels_association_ubud.html",
+    "kategori": "data",
+    "ukuran_byte": 91359,
+    "ukuran_kb": 89.218,
+    "ukuran_mb": 0.087127,
+    "md5": "32c44509fd552761bfff0ff599aaa4c3",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.399576+00:00"
+  },
+  {
+    "path": "data/raw/open_meteo_ubud_2025-01.json",
+    "nama_file": "open_meteo_ubud_2025-01.json",
+    "kategori": "data",
+    "ukuran_byte": 2204,
+    "ukuran_kb": 2.152,
+    "ukuran_mb": 0.002102,
+    "md5": "bb970830c9f4da3942c6470b75485511",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.399592+00:00"
+  },
+  {
+    "path": "docs/PANDUAN_FINALISASI.md",
+    "nama_file": "PANDUAN_FINALISASI.md",
+    "kategori": "docs",
+    "ukuran_byte": 2911,
+    "ukuran_kb": 2.843,
+    "ukuran_mb": 0.002776,
+    "md5": "cdb8f03e4411027f52b8188fd3d56925",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.399609+00:00"
+  },
+  {
+    "path": "docs/dokumentasi.md",
+    "nama_file": "dokumentasi.md",
+    "kategori": "docs",
+    "ukuran_byte": 3537,
+    "ukuran_kb": 3.454,
+    "ukuran_mb": 0.003373,
+    "md5": "c7a909f765f4b1daed4f07cf47d50df9",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.399626+00:00"
+  },
+  {
+    "path": "metadata/acquisition_report.json",
+    "nama_file": "acquisition_report.json",
+    "kategori": "metadata",
+    "ukuran_byte": 962,
+    "ukuran_kb": 0.939,
+    "ukuran_mb": 0.000917,
+    "md5": "ff39036920f6ee44bb2c2ace33e399a9",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.399640+00:00"
+  },
+  {
+    "path": "metadata/data_ethics_checklist.csv",
+    "nama_file": "data_ethics_checklist.csv",
+    "kategori": "metadata",
+    "ukuran_byte": 2231,
+    "ukuran_kb": 2.179,
+    "ukuran_mb": 0.002128,
+    "md5": "b191b1013759d1794a1370ac9f7bf297",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.399655+00:00"
+  },
+  {
+    "path": "metadata/data_ethics_checklist.xlsx",
+    "nama_file": "data_ethics_checklist.xlsx",
+    "kategori": "metadata",
+    "ukuran_byte": 7504,
+    "ukuran_kb": 7.328,
+    "ukuran_mb": 0.007156,
+    "md5": "579f39968b9a66b5f93a02b4a2f0565f",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.399676+00:00"
+  },
+  {
+    "path": "requirements.txt",
+    "nama_file": "requirements.txt",
+    "kategori": "root",
+    "ukuran_byte": 45,
+    "ukuran_kb": 0.044,
+    "ukuran_mb": 4.3e-05,
+    "md5": "2289801ffa4c9521cd572c224e718e22",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.399688+00:00"
+  },
+  {
+    "path": "scripts/akuisisi_data_ubud.py",
+    "nama_file": "akuisisi_data_ubud.py",
+    "kategori": "scripts",
+    "ukuran_byte": 12508,
+    "ukuran_kb": 12.215,
+    "ukuran_mb": 0.011929,
+    "md5": "91df2eb8124218a4084f56c17b8d47fb",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.399714+00:00"
+  },
+  {
+    "path": "scripts/scraping_wikipedia_ubud.py",
+    "nama_file": "scraping_wikipedia_ubud.py",
+    "kategori": "scripts",
+    "ukuran_byte": 3828,
+    "ukuran_kb": 3.738,
+    "ukuran_mb": 0.003651,
+    "md5": "476a29e5d3dfd42e4ee4afc1b7891c91",
+    "waktu_pencatatan_utc": "2026-11-19T03:30:43.399731+00:00"
+  }
+]

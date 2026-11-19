@@ -1,0 +1,30 @@
+{
+  "generated_at_utc": "2026-11-19T03:30:40.603887+00:00",
+  "web_scraping": {
+    "source": "Bali Hotels Association",
+    "page_url": "https://www.balihotelsassociation.com/our-hotel-and-resorts/?location=ubud",
+    "robots_url": "https://www.balihotelsassociation.com/robots.txt",
+    "status": "SCRAPED",
+    "http_status": 200,
+    "robots_http_status": 200,
+    "records": 2,
+    "reason": "HTML diproses dengan BeautifulSoup; hanya data yang terlihat pada halaman."
+  },
+  "openstreetmap": {
+    "status": "FAILED",
+    "error": "HTTPError: 502 Server Error: Bad Gateway for url: https://overpass-api.de/api/interpreter"
+  },
+  "open_meteo": {
+    "status": "SUCCESS",
+    "count": 31,
+    "endpoint": "https://archive-api.open-meteo.com/v1/archive"
+  },
+  "dataset_processing": {
+    "bps_rows": 326,
+    "bps_columns": 7,
+    "unique_accommodations": 326,
+    "village_count": 8,
+    "weather_merge_matched": 326,
+    "weather_merge_unmatched": 0
+  }
+}

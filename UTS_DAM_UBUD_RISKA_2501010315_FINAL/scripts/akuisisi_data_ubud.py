@@ -302,6 +302,10 @@ def write_measurement_and_provenance() -> None:
         rel = path.relative_to(BASE_DIR).as_posix()
         if rel.startswith(".git/") or rel in excluded or "__pycache__" in path.parts:
             continue
+        # Storage proyek data hanya menghitung data mentah, interim, processed,
+        # dan metadata. Notebook, kode, serta dokumentasi tidak dicampur ke ukuran dataset.
+        if not (rel.startswith("data/") or rel.startswith("metadata/")):
+            continue
         size = path.stat().st_size
         rows.append({
             "path": rel,

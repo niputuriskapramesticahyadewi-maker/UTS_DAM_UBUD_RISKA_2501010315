@@ -24,7 +24,7 @@ Eksekusi GitHub Actions berhasil pada 19 November 2026. Ringkasan dari `metadata
 ## Empat perbaikan berdasarkan masukan dosen
 - Analisis utama memakai dataset BPS hasil ekstraksi sumber publikasi, bukan nama hotel atau desa tiruan.
 - Scraping HTML benar-benar dilakukan pada halaman BHA setelah pemeriksaan robots.txt mengizinkan akses. HTML mentah disimpan dan 10 kartu hotel Ubud diekstrak ke CSV. Hasil ini terbatas pada halaman pertama dari 18 properti yang ditampilkan situs.
-- Storage diukur dari ukuran aktual file dengan `stat().st_size`, bukan estimasi manual. Pengukuran terakhir mencakup 16 file data dan metadata dengan total **5.051.850 byte (sekitar 4,82 MB)**. File pengukuran, provenance, dan folder `.git` tidak dimasukkan dalam penjumlahan.
+- Storage diukur dari ukuran aktual file dengan `stat().st_size`, bukan estimasi manual. Pengukuran terakhir mencakup 16 file data dan metadata dengan total **5.051.850 byte (sekitar 4,80 MB)**. File pengukuran, provenance, dan folder `.git` tidak dimasukkan dalam penjumlahan.
 - JSON mentah OpenStreetMap dan Open-Meteo disimpan di `data/raw/` sebelum diekstrak menjadi CSV.
 
 ## Etika dan batasan
@@ -39,7 +39,7 @@ Eksekusi GitHub Actions berhasil pada 19 November 2026. Ringkasan dari `metadata
 - `data/raw/openstreetmap_akomodasi_ubud_raw.json` — JSON mentah Overpass.
 - `data/raw/open_meteo_ubud_2025-01.json` — JSON mentah Open-Meteo.
 - `data/interim/bali_hotels_association_ubud.csv` — hasil scraping 10 kartu hotel Ubud.
-- `data/interim/openstreetmap_akomodasi_ubud.csv` — 849 objek OSM.
+- `data/interim/openstreetmap_akomodasi_ubud.csv` — 897 objek OSM.
 - `data/interim/cuaca_harian_ubud_2025-01.csv` — 31 observasi cuaca.
 - `data/processed/akomodasi_cuaca_ubud.csv` — hasil penggabungan 326 baris.
 - `metadata/acquisition_report.json` — status dan jumlah hasil akuisisi.

@@ -1,33 +1,48 @@
-# Dokumentasi UTS DAM
+# Dokumentasi UTS DAM — Akomodasi Pariwisata Ubud
 
 ## Tujuan
-Mengakuisisi dan mengelola data direktori akomodasi Ubud dari sumber BPS, melengkapi konteks wilayah dengan data cuaca historis Open-Meteo dan data objek akomodasi OpenStreetMap, serta mendokumentasikan etika dan keterbatasan proses.
+Mengelola data direktori akomodasi Kecamatan Ubud dari publikasi BPS, melakukan scraping halaman daftar hotel BHA sesuai izin robots.txt, mengambil data tambahan melalui API, mengolah hasil, dan mendokumentasikan etika serta provenance.
 
-## Sumber data
-1. BPS Kabupaten Gianyar, *Direktori Hotel Kabupaten Gianyar 2017* (direktori tahun 2015). CSV ekstraksi yang saat ini berada di repository berisi **326 baris data dan 7 kolom**.
-2. Open-Meteo Historical Weather API, koordinat Ubud, periode 1–31 Januari 2025.
-3. OpenStreetMap melalui Overpass API, objek bertag `tourism` pada bounding box perkiraan sekitar Ubud.
-4. Wikipedia bahasa Indonesia melalui MediaWiki API, hanya sebagai data artikel tambahan.
+## Hasil eksekusi terverifikasi
+GitHub Actions berhasil dijalankan pada 19 November 2026. Laporan akuisisi terakhir mencatat:
+- BPS: 326 baris data, 7 kolom, 326 nama akomodasi unik, 8 desa.
+- Scraping BHA: 10 kartu properti Ubud dari halaman pertama. Halaman menampilkan 1–10 dari total 18; karena itu data scraping belum mencakup seluruh halaman.
+- OpenStreetMap: 849 objek akomodasi/pariwisata dalam bounding box perkiraan Ubud.
+- Open-Meteo: 31 observasi harian untuk Januari 2025.
+- Merge dataset BPS dengan ringkasan cuaca: 326 cocok, 0 tidak cocok.
 
-## Proses pengolahan
-Dataset BPS divalidasi dan dianalisis langsung dari CSV sumber. Notebook menghitung distribusi akomodasi berdasarkan desa dan klasifikasi tanpa membuat nama hotel/desa tiruan. Data cuaca harian disimpan sebagai JSON mentah dan CSV. Data cuaca diringkas menjadi satu baris konteks wilayah lalu digabungkan ke data akomodasi menggunakan validasi `many_to_one`.
+## Sumber dan proses
+### 1. Dataset utama BPS
+PDF sumber berada di `data/raw/BPS5104-direktori_hotel_kabupaten_gianyar_2017.pdf`. CSV hasil ekstraksi berada di `data/interim/akomodasi_ubud_bps_2015_ekstraksi.csv`. Dataset ini menjadi dasar analisis, bukan data tiruan. Data direktori merujuk tahun 2015.
 
-Data OpenStreetMap diambil melalui Overpass API, respons JSON disimpan mentah terlebih dahulu, kemudian elemen `node`, `way`, dan `relation` diekstrak ke CSV. Hasil OSM adalah objek yang tercatat di OpenStreetMap, bukan daftar usaha yang dijamin lengkap atau masih aktif. Bounding box yang digunakan merupakan perkiraan area Ubud, bukan batas administratif resmi Kecamatan Ubud.
+### 2. Scraping HTML Bali Hotels Association
+URL: `https://www.balihotelsassociation.com/our-hotel-and-resorts/?location=ubud`.
 
-## Proses scraping dan etika akses
-Pemeriksaan `https://bali.bps.go.id/robots.txt` pada pemeriksaan sebelumnya menghasilkan HTTP 403 Forbidden. Karena aturan akses BPS tidak dapat diverifikasi, scraping halaman BPS tidak dilakukan dan pembatasan server tidak dicoba untuk dilewati.
+Script terlebih dahulu meminta `https://www.balihotelsassociation.com/robots.txt`. Pada eksekusi terakhir, robots.txt merespons HTTP 200 dan halaman target juga HTTP 200. Setelah izin diperiksa, HTML disimpan ke `data/raw/bali_hotels_association_ubud.html`. BeautifulSoup digunakan untuk mengambil kartu properti pada elemen `.hotel-item`, memfilter area Ubud, dan mengekstrak nama akomodasi, rating bintang yang ditampilkan, harga jika tersedia, website, dan tautan lokasi. CSV hasil ekstraksi disimpan di `data/interim/bali_hotels_association_ubud.csv`.
 
-Sebagai sumber halaman web alternatif, script memeriksa `robots.txt` Bali Hotels Association (BHA) sebelum mengakses direktori hotel/resor Ubud. Script hanya melakukan request halaman dan parsing HTML dengan BeautifulSoup jika `robots.txt` dapat dibaca dan mengizinkan URL target. Jika `robots.txt` tidak tersedia, akses dilarang, atau request gagal, proses scraping dilewati dan alasannya dicatat di `metadata/acquisition_report.json`. Hasil scraping disimpan sebagai HTML mentah dan CSV turunan hanya jika akses berhasil. Jangan menganggap scraping berhasil sebelum status laporan menunjukkan `SCRAPED`.
+Hasil yang tercatat adalah 10 kartu pada halaman pertama. Situs menunjukkan 1–10 dari 18 properti, jadi hasil belum boleh disebut sebagai seluruh daftar 18 hotel. Data harga/rating adalah informasi yang ditampilkan saat akses dan dapat berubah.
 
-## Pengukuran storage dan provenance
-Notebook mengukur ukuran file yang benar-benar ada menggunakan `stat().st_size`, lalu menyimpan ukuran byte, KB, dan MB dalam `metadata/storage_measurement.csv`. File pengukuran dan provenance dikecualikan dari perhitungan agar tidak terjadi siklus. Provenance mencatat ukuran byte dan hash MD5 file yang tersedia; entri file yang belum terbentuk dilewati.
+### 3. OpenStreetMap Overpass API
+Script mengirim query objek dengan tag `tourism` untuk node, way, dan relation dalam bounding box perkiraan sekitar Ubud. Respons JSON mentah disimpan ke `data/raw/openstreetmap_akomodasi_ubud_raw.json`, lalu diolah menjadi CSV `data/interim/openstreetmap_akomodasi_ubud.csv`. Eksekusi terakhir memperoleh 849 objek. Jumlah ini adalah objek yang dipetakan di OSM dalam area query, bukan jumlah usaha aktif atau daftar resmi. Atribusi: © OpenStreetMap contributors, lisensi ODbL.
 
-## Perbedaan periode dan keterbatasan
-- Data akomodasi BPS adalah direktori historis tahun 2015, bukan status usaha saat ini.
-- Data cuaca berasal dari Januari 2025, sehingga tidak menggambarkan cuaca pada tahun 2015.
-- Data OSM bergantung pada kontribusi pemetaan; data dapat tidak lengkap, memiliki atribut kosong, atau berisi objek yang tidak lagi aktif.
-- BPS HTTP 403 menyebabkan scraping BPS tidak dilakukan.
-- Hasil API dan file provenance hanya dapat dinyatakan tersedia setelah notebook berhasil dijalankan dan keluarannya diunggah ke repository.
+### 4. Open-Meteo Historical Weather API
+Data cuaca diambil untuk koordinat Ubud, periode 1–31 Januari 2025. JSON mentah disimpan di `data/raw/open_meteo_ubud_2025-01.json` dan CSV turunannya di `data/interim/cuaca_harian_ubud_2025-01.csv`. Terdapat 31 observasi harian.
 
-## Atribusi
-Data OpenStreetMap © OpenStreetMap contributors, tersedia di bawah Open Database License (ODbL). Dokumentasi query: https://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide.
+## Pengolahan dan validasi
+CSV BPS diperiksa jumlah baris, kolom, dan keunikan nama akomodasi. Ringkasan akomodasi dibuat per desa dan klasifikasi. Cuaca Januari 2025 diringkas menjadi satu baris konteks wilayah, lalu digabungkan ke data BPS dengan validasi relasi many-to-one. Hasil terakhir menunjukkan 326 baris cocok dan 0 tidak cocok.
+
+**Perbedaan periode:** dataset BPS merujuk tahun 2015, sedangkan cuaca berasal dari Januari 2025. Karena berbeda periode, cuaca tidak boleh ditafsirkan sebagai kondisi cuaca ketika direktori BPS dikumpulkan.
+
+## Pengukuran storage
+Pengukuran menggunakan ukuran aktual file dari filesystem (`stat().st_size`). Pengukuran terakhir mencakup 23 file dengan total 5.051.850 byte atau sekitar 4,82 MB. Folder `.git`, file storage measurement itu sendiri, serta file provenance dikecualikan agar tidak terjadi perhitungan siklik.
+
+## Provenance
+`metadata/provenance.json` dan `metadata/provenance.csv` mencatat path, sumber, ukuran, waktu pencatatan, dan hash MD5 untuk file yang tersedia. `metadata/acquisition_report.json` mencatat status API/scraping dan jumlah data yang diperoleh.
+
+## Keterbatasan dan etika
+- Situs BPS memberikan HTTP 403 pada pemeriksaan robots.txt sebelumnya; scraping BPS tidak dilakukan dan pembatasan tidak dilewati.
+- Scraping BHA dilakukan hanya setelah robots.txt dapat dibaca dan mengizinkan akses. Hasil yang diperoleh hanya 10 kartu dari halaman pertama (1–10 dari 18).
+- Data OSM bergantung pada kontribusi pemetaan, dapat memiliki atribut kosong, duplikasi nama, atau objek yang tidak lagi aktif.
+- Bounding box OSM merupakan perkiraan, bukan batas administratif resmi Kecamatan Ubud.
+- Data BPS bersifat historis, tidak menunjukkan status operasional akomodasi saat ini.
+- Informasi harga pada halaman BHA dapat berubah dan bukan harga final untuk transaksi.

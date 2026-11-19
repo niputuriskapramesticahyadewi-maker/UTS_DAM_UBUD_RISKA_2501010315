@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-19T03:30:40.603887+00:00",
+  "generated_at_utc": "2026-11-19T03:31:41.179272+00:00",
   "web_scraping": {
     "source": "Bali Hotels Association",
     "page_url": "https://www.balihotelsassociation.com/our-hotel-and-resorts/?location=ubud",
@@ -11,8 +11,11 @@
     "reason": "HTML diproses dengan BeautifulSoup; hanya data yang terlihat pada halaman."
   },
   "openstreetmap": {
-    "status": "FAILED",
-    "error": "HTTPError: 502 Server Error: Bad Gateway for url: https://overpass-api.de/api/interpreter"
+    "status": "SUCCESS",
+    "count": 849,
+    "timestamp_osm_base": "2026-11-19T03:30:47Z",
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "failed_endpoints": []
   },
   "open_meteo": {
     "status": "SUCCESS",

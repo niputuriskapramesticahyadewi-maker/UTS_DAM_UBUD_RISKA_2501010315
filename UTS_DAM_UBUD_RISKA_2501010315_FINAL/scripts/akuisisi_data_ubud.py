@@ -288,6 +288,7 @@ def process_base_dataset() -> dict:
 
 
 def write_measurement_and_provenance() -> None:
+    # Ukuran dihitung ulang pada setiap workflow setelah semua keluaran akuisisi dibuat.
     # Exclude generated measurement/provenance files to avoid self-referential sizes.
     excluded = {
         "metadata/storage_measurement.csv",

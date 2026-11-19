@@ -1,5 +1,5 @@
 ﻿path,nama_file,kategori,ukuran_byte,ukuran_kb,ukuran_mb
-README.md,README.md,root,4351,4.249,0.004149
+README.md,README.md,root,4845,4.731,0.004621
 UTS_DAM_UBUD_RISKA_2501010315.ipynb,UTS_DAM_UBUD_RISKA_2501010315.ipynb,root,32160,31.406,0.03067
 data/interim/akomodasi_ubud_bps_2015_ekstraksi.csv,akomodasi_ubud_bps_2015_ekstraksi.csv,data,28115,27.456,0.026813
 data/interim/analisis_akomodasi_per_desa.csv,analisis_akomodasi_per_desa.csv,data,109,0.106,0.000104
@@ -14,11 +14,11 @@ data/raw/README_raw.txt,README_raw.txt,data,641,0.626,0.000611
 data/raw/bali_hotels_association_ubud.html,bali_hotels_association_ubud.html,data,91359,89.218,0.087127
 data/raw/open_meteo_ubud_2025-01.json,open_meteo_ubud_2025-01.json,data,2204,2.152,0.002102
 data/raw/openstreetmap_akomodasi_ubud_raw.json,openstreetmap_akomodasi_ubud_raw.json,data,241235,235.581,0.23006
-docs/PANDUAN_FINALISASI.md,PANDUAN_FINALISASI.md,docs,2911,2.843,0.002776
-docs/dokumentasi.md,dokumentasi.md,docs,3537,3.454,0.003373
+docs/PANDUAN_FINALISASI.md,PANDUAN_FINALISASI.md,docs,2489,2.431,0.002374
+docs/dokumentasi.md,dokumentasi.md,docs,4720,4.609,0.004501
 metadata/acquisition_report.json,acquisition_report.json,metadata,1073,1.048,0.001023
-metadata/data_ethics_checklist.csv,data_ethics_checklist.csv,metadata,2231,2.179,0.002128
+metadata/data_ethics_checklist.csv,data_ethics_checklist.csv,metadata,2308,2.254,0.002201
 metadata/data_ethics_checklist.xlsx,data_ethics_checklist.xlsx,metadata,7504,7.328,0.007156
 requirements.txt,requirements.txt,root,45,0.044,4.3e-05
-scripts/akuisisi_data_ubud.py,akuisisi_data_ubud.py,scripts,14462,14.123,0.013792
+scripts/akuisisi_data_ubud.py,akuisisi_data_ubud.py,scripts,14551,14.21,0.013877
 scripts/scraping_wikipedia_ubud.py,scraping_wikipedia_ubud.py,scripts,3828,3.738,0.003651

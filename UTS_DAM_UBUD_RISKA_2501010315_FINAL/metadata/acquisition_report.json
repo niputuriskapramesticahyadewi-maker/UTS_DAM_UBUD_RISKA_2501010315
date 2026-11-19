@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-19T03:33:50.067608+00:00",
+  "generated_at_utc": "2026-11-19T03:37:04.905787+00:00",
   "web_scraping": {
     "source": "Bali Hotels Association",
     "page_url": "https://www.balihotelsassociation.com/our-hotel-and-resorts/?location=ubud",
@@ -13,7 +13,7 @@
   "openstreetmap": {
     "status": "SUCCESS",
     "count": 849,
-    "timestamp_osm_base": "2026-11-19T03:32:56Z",
+    "timestamp_osm_base": "2026-11-19T03:36:53Z",
     "endpoint": "https://overpass-api.de/api/interpreter",
     "failed_endpoints": []
   },

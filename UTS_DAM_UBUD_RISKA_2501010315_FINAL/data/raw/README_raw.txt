@@ -8,4 +8,4 @@ File yang tersedia setelah workflow GitHub Actions berhasil:
 
 Scraping BHA menghasilkan 10 kartu hotel area Ubud dari halaman pertama (1–10 dari 18 properti yang ditampilkan). Scraping BPS tidak dilakukan karena pemeriksaan robots.txt BPS menghasilkan HTTP 403 dan aturan akses tidak dapat diverifikasi.
 
-Lihat metadata/acquisition_report.json untuk status serta jumlah hasil terbaru. Jangan menganggap jumlah data selalu sama pada setiap eksekusi karena data API dapat berubah.
+Lihat metadata/acquisition_report.json untuk status serta jumlah hasil terbaru. Jangan menganggap jumlah data selalu sama pada setiap eksekusi karena data API dapat berubah

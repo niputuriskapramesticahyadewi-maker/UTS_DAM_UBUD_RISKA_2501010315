@@ -1,10 +1,13 @@
 # Panduan finalisasi sebelum pengumpulan
 
-## 1. Jalankan notebook terbaru
-1. Buka notebook UTS DAM dari repository di Google Colab.
-2. Pastikan PDF BPS dan CSV ekstraksi tersedia.
-3. Pilih **Runtime → Run all**.
-4. Pastikan setiap sel selesai tanpa error. Jika Overpass API atau API lain gagal, catat kegagalannya dan jangan mengarang hasil.
+## 1. Jalankan workflow GitHub (tanpa Colab)
+1. Buka tab **Actions** pada repository.
+2. Pilih workflow **Akuisisi Data Ubud**.
+3. Klik **Run workflow**.
+4. Buka workflow run terbaru dan tunggu hingga selesai.
+5. Pastikan status **Success**. Jika gagal, buka log langkah yang gagal dan jangan menganggap file keluaran sudah terbentuk.
+
+Notebook tetap menjadi bahan dokumentasi dan analisis. Proses akuisisi otomatis dijalankan oleh `scripts/akuisisi_data_ubud.py` melalui GitHub Actions.
 
 ## 2. Cocokkan dataset BPS
 CSV yang saat ini terlihat di repository berisi **326 baris data dan 7 kolom**. Angka ini berasal dari pemeriksaan file CSV di repository, bukan angka yang diketik manual di notebook. Periksa kembali jumlah baris setelah notebook dijalankan.

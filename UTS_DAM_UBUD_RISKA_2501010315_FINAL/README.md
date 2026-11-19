@@ -11,7 +11,7 @@ Proyek ini mengolah direktori akomodasi Kecamatan Ubud dari publikasi BPS *Direk
 Eksekusi GitHub Actions berhasil pada 19 November 2026. Ringkasan dari `metadata/acquisition_report.json`:
 - Dataset BPS: **326 baris, 7 kolom**, 326 nama akomodasi unik, tersebar pada 8 desa.
 - Scraping BHA: **10 kartu hotel Ubud** berhasil diambil dari halaman pertama. Halaman menyatakan 1–10 dari 18, sehingga hasil ini adalah sampel halaman pertama, bukan seluruh 18 properti.
-- OpenStreetMap Overpass API: **897 objek** akomodasi pada bounding box perkiraan sekitar Ubud. Respons mentah disimpan sebagai JSON.
+- OpenStreetMap Overpass API: **849 objek** akomodasi pada bounding box perkiraan sekitar Ubud. Respons mentah disimpan sebagai JSON.
 - Open-Meteo Historical API: **31 observasi harian** untuk Januari 2025. Respons mentah disimpan sebagai JSON.
 - Penggabungan data BPS dengan ringkasan cuaca: **326 baris cocok, 0 tidak cocok**.
 
@@ -39,7 +39,7 @@ Eksekusi GitHub Actions berhasil pada 19 November 2026. Ringkasan dari `metadata
 - `data/raw/openstreetmap_akomodasi_ubud_raw.json` — JSON mentah Overpass.
 - `data/raw/open_meteo_ubud_2025-01.json` — JSON mentah Open-Meteo.
 - `data/interim/bali_hotels_association_ubud.csv` — hasil scraping 10 kartu hotel Ubud.
-- `data/interim/openstreetmap_akomodasi_ubud.csv` — 897 objek OSM.
+- `data/interim/openstreetmap_akomodasi_ubud.csv` — 849 objek OSM.
 - `data/interim/cuaca_harian_ubud_2025-01.csv` — 31 observasi cuaca.
 - `data/processed/akomodasi_cuaca_ubud.csv` — hasil penggabungan 326 baris.
 - `metadata/acquisition_report.json` — status dan jumlah hasil akuisisi.

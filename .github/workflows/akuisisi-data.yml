@@ -46,5 +46,6 @@ jobs:
             echo "Tidak ada perubahan data untuk disimpan."
           else
             git commit -m "Simpan hasil akuisisi data Ubud otomatis"
+            git pull --rebase origin main
             git push
           fi

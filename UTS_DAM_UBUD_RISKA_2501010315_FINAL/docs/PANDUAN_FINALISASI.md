@@ -1,47 +1,38 @@
 # Panduan finalisasi sebelum pengumpulan
 
-## 1. Jalankan workflow GitHub (tanpa Colab)
-1. Buka tab **Actions** pada repository.
-2. Pilih workflow **Akuisisi Data Ubud**.
-3. Klik **Run workflow**.
-4. Buka workflow run terbaru dan tunggu hingga selesai.
-5. Pastikan status **Success**. Jika gagal, buka log langkah yang gagal dan jangan menganggap file keluaran sudah terbentuk.
+## Status repository
+Workflow GitHub Actions terbaru berhasil (**Success**) pada 19 November 2026. Hasil akuisisi sudah disimpan ke repository, jadi tidak perlu menjalankan Google Colab untuk menghasilkan file tambahan ini.
 
-Notebook tetap menjadi bahan dokumentasi dan analisis. Proses akuisisi otomatis dijalankan oleh `scripts/akuisisi_data_ubud.py` melalui GitHub Actions.
+## Hasil yang sudah tersedia
+- Dataset BPS: 326 baris, 7 kolom.
+- Scraping BHA: 10 kartu hotel Ubud dari halaman pertama (situs menampilkan 1–10 dari 18).
+- OpenStreetMap: 849 objek dalam bounding box perkiraan Ubud; JSON mentah dan CSV tersedia.
+- Open-Meteo: 31 observasi cuaca Januari 2025; JSON mentah dan CSV tersedia.
+- Merge BPS-cuaca: 326 baris cocok, 0 tidak cocok.
+- Storage: 23 file diukur, total 5.051.850 byte (sekitar 4,82 MB), tidak termasuk file pengukuran dan provenance.
 
-## 2. Cocokkan dataset BPS
-CSV yang saat ini terlihat di repository berisi **326 baris data dan 7 kolom**. Angka ini berasal dari pemeriksaan file CSV di repository, bukan angka yang diketik manual di notebook. Periksa kembali jumlah baris setelah notebook dijalankan.
+## Periksa file di GitHub
+1. Buka `data/raw/` dan pastikan ada PDF BPS, HTML mentah BHA, JSON mentah OpenStreetMap, dan JSON mentah Open-Meteo.
+2. Buka `data/interim/` dan periksa CSV ekstraksi BPS, CSV hasil scraping BHA, CSV OSM, CSV cuaca, serta CSV analisis.
+3. Buka `data/processed/akomodasi_cuaca_ubud.csv`.
+4. Buka `metadata/acquisition_report.json`, `metadata/storage_measurement.csv`, `metadata/provenance.json`, dan `metadata/provenance.csv`.
 
-## 3. Periksa hasil akuisisi
-Jika workflow berhasil, script membuat keluaran berikut sesuai API yang berhasil diakses:
-- `data/raw/open_meteo_ubud_2025-01.json`
-- `data/raw/wikipedia_ubud_search_raw.json`
-- `data/raw/openstreetmap_akomodasi_ubud_raw.json`
-- CSV turunan pada folder `data/interim/`
+## Catatan yang wajib dijelaskan saat presentasi
+- Dataset BPS merupakan data historis tahun 2015.
+- Scraping BHA mengambil 10 kartu pada halaman pertama dari 18 properti yang ditampilkan situs; jangan menyebutnya seluruh 18.
+- Data OSM merupakan sumber API tambahan dalam bounding box perkiraan, bukan direktori resmi dan bukan hasil scraping HTML.
+- Data cuaca Januari 2025 berbeda periode dengan dataset BPS tahun 2015.
+- BPS tidak di-scrape karena robots.txt menghasilkan HTTP 403; tidak ada upaya melewati pembatasan.
+- Atribusi OpenStreetMap: © OpenStreetMap contributors, lisensi ODbL.
 
-Pastikan JSON mentah benar-benar berisi respons API dan bukan data contoh. Data OSM adalah data objek OpenStreetMap dalam bounding box perkiraan sekitar Ubud, bukan direktori resmi dan bukan scraping HTML.
-
-## 4. Periksa storage dan provenance
-Pastikan `metadata/storage_measurement.csv` berisi ukuran aktual byte/KB/MB dari file yang sudah terbentuk. Pastikan `metadata/provenance.json` dan `metadata/provenance.csv` mencatat file yang benar-benar ada, ukuran aktual, dan hash MD5.
-
-## 5. Status scraping BPS
-Pemeriksaan `https://bali.bps.go.id/robots.txt` sebelumnya menghasilkan HTTP 403. Scraping BPS tidak dilakukan karena aturan akses tidak dapat diverifikasi. Jangan mencoba melewati pembatasan. Bila dosen mewajibkan scraping, minta persetujuan sumber alternatif.
-
-## 6. Perhatikan perbedaan periode
-Direktori BPS merujuk tahun 2015, sedangkan data cuaca diambil untuk Januari 2025. Jelaskan bahwa data cuaca hanya menjadi konteks wilayah, bukan cuaca saat pendataan akomodasi.
-
-## 7. Simpan dan unggah hasil
-1. Simpan notebook setelah seluruh sel selesai.
-2. Pastikan output eksekusi tersimpan di file `.ipynb`.
-3. Unggah JSON mentah, CSV hasil akuisisi, hasil merge, storage measurement, dan provenance yang berhasil dibuat.
-4. Buka kembali GitHub dan periksa apakah file benar-benar muncul.
-
-## Checklist
-- [ ] Notebook dijalankan dari awal sampai akhir.
-- [ ] CSV BPS tervalidasi dan analisis menggunakan data asli.
-- [ ] JSON mentah API disimpan sebelum ekstraksi CSV.
-- [ ] Data OpenStreetMap diberi atribusi ODbL dan keterbatasan cakupan dijelaskan.
-- [ ] Data cuaca dan data akomodasi dijelaskan berbeda periode.
-- [ ] Storage diukur dari ukuran file aktual.
-- [ ] Provenance berisi file yang tersedia, ukuran byte, dan hash.
-- [ ] Notebook terbaru beserta keluaran berhasil diunggah ke GitHub.
+## Checklist pengumpulan
+- [x] Dataset utama bersumber dari CSV ekstraksi publikasi BPS, bukan data tiruan.
+- [x] Scraping HTML BHA dijalankan setelah robots.txt mengizinkan akses.
+- [x] HTML mentah scraping disimpan sebelum ekstraksi ke CSV.
+- [x] JSON mentah OpenStreetMap disimpan sebelum diolah menjadi CSV.
+- [x] JSON mentah Open-Meteo disimpan sebelum diolah menjadi CSV.
+- [x] Storage diukur dari ukuran aktual file.
+- [x] Provenance mencatat file yang tersedia, ukuran, dan hash MD5.
+- [x] Hasil akuisisi dan pengolahan tersimpan di GitHub.
+- [ ] Jelaskan keterbatasan cakupan scraping (10 dari 18 properti di halaman).
+- [ ] Jelaskan perbedaan periode data BPS dan cuaca.

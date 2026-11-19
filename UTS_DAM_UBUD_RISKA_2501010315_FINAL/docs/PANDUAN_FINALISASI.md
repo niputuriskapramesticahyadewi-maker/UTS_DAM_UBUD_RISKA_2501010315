@@ -6,10 +6,10 @@ Workflow GitHub Actions terbaru berhasil (**Success**) pada 19 November 2026. Ha
 ## Hasil yang sudah tersedia
 - Dataset BPS: 326 baris, 7 kolom.
 - Scraping BHA: 10 kartu hotel Ubud dari halaman pertama (situs menampilkan 1–10 dari 18).
-- OpenStreetMap: 897 objek dalam bounding box perkiraan Ubud; JSON mentah dan CSV tersedia.
+- OpenStreetMap: 849 objek dalam bounding box perkiraan Ubud; JSON mentah dan CSV tersedia.
 - Open-Meteo: 31 observasi cuaca Januari 2025; JSON mentah dan CSV tersedia.
 - Merge BPS-cuaca: 326 baris cocok, 0 tidak cocok.
-- Storage: 16 file data dan metadata diukur, total 5.029.159 byte (sekitar 4,80 MB), tidak termasuk file pengukuran dan provenance.
+- Storage: 14 file data dan metadata diukur, total 4.989.692 byte (sekitar 4,76 MB), tidak termasuk file pengukuran dan provenance.
 
 ## Periksa file di GitHub
 1. Buka `data/raw/` dan pastikan ada PDF BPS, HTML mentah BHA, JSON mentah OpenStreetMap, dan JSON mentah Open-Meteo.

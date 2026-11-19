@@ -120,7 +120,13 @@ def check_robots_and_scrape_bha() -> dict:
 
 
 def acquire_overpass() -> dict:
-    endpoint = "https://overpass-api.de/api/interpreter"
+    # Beberapa instance publik digunakan berurutan untuk menghadapi 502/503.
+    # Tidak mengirim request paralel; jeda diberikan antar percobaan.
+    endpoints = [
+        "https://overpass-api.de/api/interpreter",
+        "https://overpass.kumi.systems/api/interpreter",
+        "https://overpass.private.coffee/api/interpreter",
+    ]
     south, west, north, east = -8.57, 115.20, -8.42, 115.34
     q = f"""
 [out:json][timeout:60];
@@ -131,13 +137,28 @@ def acquire_overpass() -> dict:
 );
 out center tags;
 """
-    response = SESSION.post(endpoint, data={"data": q}, timeout=90)
-    response.raise_for_status()
-    payload = response.json()
-    if "elements" not in payload:
-        raise ValueError("Overpass response has no elements field.")
-    save_json(RAW / "openstreetmap_akomodasi_ubud_raw.json", payload)
+    errors = []
+    payload = None
+    selected_endpoint = None
+    for attempt, endpoint in enumerate(endpoints, start=1):
+        try:
+            response = SESSION.post(endpoint, data={"data": q}, timeout=90)
+            response.raise_for_status()
+            candidate = response.json()
+            if "elements" not in candidate:
+                raise ValueError("Overpass response has no elements field.")
+            payload = candidate
+            selected_endpoint = endpoint
+            break
+        except (requests.RequestException, ValueError) as exc:
+            errors.append(f"{endpoint}: {type(exc).__name__}: {exc}")
+            if attempt < len(endpoints):
+                time.sleep(3 * attempt)
 
+    if payload is None:
+        raise RuntimeError("Semua instance Overpass gagal: " + " | ".join(errors))
+
+    save_json(RAW / "openstreetmap_akomodasi_ubud_raw.json", payload)
     rows = []
     for el in payload.get("elements", []):
         tags = el.get("tags", {})
@@ -163,9 +184,9 @@ out center tags;
         "status": "SUCCESS",
         "count": len(df),
         "timestamp_osm_base": payload.get("osm3s", {}).get("timestamp_osm_base"),
-        "endpoint": endpoint
+        "endpoint": selected_endpoint,
+        "failed_endpoints": errors
     }
-
 
 def acquire_weather() -> dict:
     endpoint = "https://archive-api.open-meteo.com/v1/archive"

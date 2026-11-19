@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-19T03:36:53Z",
+    "timestamp_osm_base": "2026-05-31T22:37:44Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -379,6 +379,16 @@
     },
     {
       "type": "node",
+      "id": 2188281708,
+      "lat": -8.4865094,
+      "lon": 115.2471476,
+      "tags": {
+        "name": "Terracotta",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
       "id": 2313935857,
       "lat": -8.4773733,
       "lon": 115.2599212,
@@ -395,7 +405,7 @@
         "addr:city": "Ubud",
         "addr:street": "Jl. Bisma",
         "email": "made_hibiscus@yahoo.com",
-        "fax": "+62 361 978293",
+        "fax": "+62 0361 978293",
         "name": "Bali Moon",
         "phone": "+62 361 975 963",
         "source": "Bing, Local knowledge",
@@ -599,7 +609,7 @@
         "addr:postcode": "80571",
         "addr:street": "Jl. Sriwedari ,",
         "name": "Villa Gaia",
-        "phone": "+62 361 972312",
+        "phone": "+62 361.972.312",
         "tourism": "guest_house",
         "website": "http://www.villagaiabali.com/"
       }
@@ -615,7 +625,7 @@
         "addr:housenumber": "41",
         "addr:postcode": "80571",
         "addr:street": "Hanoman Road",
-        "contact:phone": "+62 361 977989",
+        "contact:phone": "(0361) 977989",
         "name": "Dewi Ayu 2",
         "tourism": "guest_house"
       }
@@ -661,7 +671,7 @@
         "name": "Bambu Indah",
         "note": "Bambu Indah is a radically distinctive eco boutique hotel carefully curated by designers and long term residents of Bali, John and Cynthia Hardy.",
         "operator": "John and Cynthia Hardy",
-        "phone": "+62 361 977922",
+        "phone": "+62 (0) 361 977 922",
         "smoking": "outside",
         "tourism": "hotel",
         "website": "https://www.bambuindah.com/",
@@ -1016,7 +1026,7 @@
       "lon": 115.2617225,
       "tags": {
         "name": "Ladybamboo Villa",
-        "phone": "+62 361 970048",
+        "phone": "+62 (361) 97 00 48",
         "tourism": "guest_house",
         "website": "https://ladybamboo.com/"
       }
@@ -1124,7 +1134,7 @@
       "lon": 115.2620263,
       "tags": {
         "name": "Bali Yoga",
-        "phone": "+62 36-1971770",
+        "phone": "0361 971770",
         "tourism": "guest_house"
       }
     },
@@ -1287,8 +1297,8 @@
     {
       "type": "node",
       "id": 3761416010,
-      "lat": -8.5010473,
-      "lon": 115.26334,
+      "lat": -8.5010977,
+      "lon": 115.2632957,
       "tags": {
         "name": "Puri Bebengan Bungalows",
         "tourism": "guest_house"
@@ -1574,6 +1584,18 @@
     },
     {
       "type": "node",
+      "id": 4112849890,
+      "lat": -8.5183064,
+      "lon": 115.2618705,
+      "tags": {
+        "internet_access": "wlan",
+        "name": "Ubud tropical garden",
+        "tourism": "hotel",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
       "id": 4113018089,
       "lat": -8.5113674,
       "lon": 115.269443,
@@ -1613,7 +1635,7 @@
         "addr:street": "Jalan Sri Wedari",
         "email": "info@ubudgreen.com",
         "name": "Ubud Green Resort Villas",
-        "phone": "+62 361 9000555",
+        "phone": "+6203619000555",
         "tourism": "hotel",
         "website": "https://www.ubudgreen.com/"
       }
@@ -1732,8 +1754,8 @@
     {
       "type": "node",
       "id": 4210817997,
-      "lat": -8.5038875,
-      "lon": 115.2533788,
+      "lat": -8.5038563,
+      "lon": 115.2533889,
       "tags": {
         "addr:city": "Campuhan",
         "addr:postcode": "80515",
@@ -1807,7 +1829,7 @@
         "email": "adisantiaubudbungalow@yahoo.com",
         "internet_access": "wlan",
         "name": "Adi Santia Bungalows",
-        "phone": "+62 361 977688",
+        "phone": "(0361) 977 688",
         "tourism": "guest_house"
       }
     },
@@ -1866,7 +1888,7 @@
         "addr:street": "Jl. Banjar Kelabang Moding",
         "internet_access": "wlan",
         "name": "Pajar House Ubud",
-        "phone": "+62 819-3602-6595",
+        "phone": "0819-3602-6595",
         "tourism": "hotel"
       }
     },
@@ -2143,12 +2165,12 @@
         "addr:postcode": "80571",
         "addr:street": "Jalan Bisma",
         "email": "santikg@indosat.net.id",
-        "fax": "+62 361 289348",
+        "fax": "+62 0361 289348",
         "internet_access": "yes",
         "internet_access:fee": "no",
         "internet_access:ssid": "isabel",
         "name": "Samhita Garden Villas",
-        "phone": "+62 361 975443",
+        "phone": "+62 0361 975443",
         "tourism": "hotel",
         "website": "http://www.samhitagarden.com"
       }
@@ -2219,7 +2241,7 @@
         "email": "imadesutoya@hotmail.com",
         "internet_access": "wlan",
         "name": "Sintya Home Stay",
-        "phone": "+62 36-1970221",
+        "phone": "0361970221",
         "tourism": "guest_house"
       }
     },
@@ -2326,7 +2348,7 @@
       "tags": {
         "internet_access": "wlan",
         "name": "Surawan Bungalows",
-        "phone": "+62 36-1976413",
+        "phone": "0361976413",
         "tourism": "guest_house"
       }
     },
@@ -2353,17 +2375,17 @@
     {
       "type": "node",
       "id": 4366369092,
-      "lat": -8.4517942,
-      "lon": 115.2639051,
+      "lat": -8.4518696,
+      "lon": 115.2639546,
       "tags": {
         "addr:postcode": "80561",
         "addr:street": "Jalan Krisna",
         "internet_access": "wlan",
         "name": "Homestay keliki",
         "opening_hours": "24/7",
-        "phone": "+62 857-9223-1088",
+        "phone": "085792231088",
         "tourism": "guest_house",
-        "website": "https://nyomankardianabali.wordpress.com/ et balisolo.com/liste-de-guides-a-bali-en-indonesie/nyoman-kardiana-guide-francophone-a-bali/"
+        "website": "https://nyomankardianabali.wordpress.com/\net\nbalisolo.com/liste-de-guides-a-bali-en-indonesie/nyoman-kardiana-guide-francophone-a-bali/"
       }
     },
     {
@@ -2372,7 +2394,7 @@
       "lat": -8.4828474,
       "lon": 115.2673462,
       "tags": {
-        "name": "Bakung Ubud",
+        "name:ru": "Bakung Ubud",
         "tourism": "hotel"
       }
     },
@@ -2471,7 +2493,7 @@
       "lat": -8.5124207,
       "lon": 115.2641349,
       "tags": {
-        "name": "puri asri bungalow",
+        "name:fr": "puri asri bungalow",
         "tourism": "guest_house"
       }
     },
@@ -2485,7 +2507,7 @@
         "addr:postcode": "80571",
         "addr:street": "Jalan Suweta",
         "internet_access": "wlan",
-        "name": "Moninghouse Backpacker House",
+        "name:de": "Moninghouse Backpacker House",
         "operator": "Ari Putra",
         "phone": "+6281237044117",
         "tourism": "guest_house"
@@ -2497,7 +2519,7 @@
       "lat": -8.535,
       "lon": 115.265115,
       "tags": {
-        "name": "Villa",
+        "name:de": "Villa",
         "tourism": "guest_house"
       }
     },
@@ -2507,7 +2529,7 @@
       "lat": -8.5349057,
       "lon": 115.2666463,
       "tags": {
-        "name": "Kreuzung",
+        "name:de": "Kreuzung",
         "tourism": "guest_house"
       }
     },
@@ -2729,18 +2751,15 @@
       "lat": -8.4747973,
       "lon": 115.2437227,
       "tags": {
+        "addr:city": "Bali",
         "addr:postcode": "80571",
-        "addr:street": "Desa Kedewatan",
-        "addr:subdistrict": "Ubud",
-        "internet_access": "wlan",
-        "internet_access:fee": "customers",
+        "addr:street": "Desa Kedewatan, Ubud",
+        "internet_access": "yes",
         "name": "The Royal Pita Maha",
-        "phone": "+62-361-980022",
         "rooms": "70",
         "smoking": "isolated",
         "stars": "5",
-        "tourism": "chalet",
-        "website": "https://royalpitamaha-bali.com/"
+        "tourism": "hotel"
       }
     },
     {
@@ -2906,7 +2925,7 @@
         "email": "tutdehouse_ubud@yahoo.com",
         "internet_access": "wlan",
         "name": "Tutde's House",
-        "phone": "+62 36-1976073",
+        "phone": "0361976073",
         "tourism": "hostel"
       }
     },
@@ -2959,7 +2978,7 @@
         "name": "Puri Kobot",
         "name:fr": "Puri Kobot",
         "opening_hours": "24/7",
-        "phone": "+62 813 5304 0211",
+        "phone": "06281353040211",
         "tourism": "guest_house"
       }
     },
@@ -3063,7 +3082,7 @@
         "name": "Arya Homestay",
         "name:de": "Arya Homestay",
         "opening_hours": "24/7",
-        "phone": "+62 361 976340",
+        "phone": "+62 0361 976340",
         "tourism": "guest_house"
       }
     },
@@ -3152,7 +3171,7 @@
         "internet_access": "wlan",
         "name": "matahari house",
         "operator": "Owner",
-        "phone": "+62 36-1974825",
+        "phone": "0361974825",
         "tourism": "guest_house"
       }
     },
@@ -3194,7 +3213,6 @@
       "lon": 115.3092368,
       "tags": {
         "addr:street": "suweta",
-        "check_date": "2026-08-15",
         "name": "Toya Villa",
         "name:en": "Toya Villa",
         "opening_hours": "24/7",
@@ -3237,7 +3255,7 @@
         "internet_access": "wlan",
         "name": "Room@Bali",
         "operator": "Room@Bali",
-        "phone": "+62 36-18989400",
+        "phone": "03618989400",
         "tourism": "hotel",
         "website": "http://www.roomatbali.com"
       }
@@ -3536,7 +3554,7 @@
         "addr:street": "Jalan Hanoman",
         "name": "The Jero Ubud",
         "name:en": "The Jero Ubud",
-        "phone": "+62 813-3925-9935",
+        "phone": "006281339259935",
         "tourism": "guest_house"
       }
     },
@@ -3549,7 +3567,7 @@
         "addr:housenumber": "15",
         "addr:street": "Jalan Nyuh Kuning",
         "name": "Langkah Bali",
-        "phone": "+62 812 3912 897",
+        "phone": "6208123912897",
         "tourism": "hotel"
       }
     },
@@ -3590,6 +3608,16 @@
     },
     {
       "type": "node",
+      "id": 4996081622,
+      "lat": -8.5414634,
+      "lon": 115.262915,
+      "tags": {
+        "name": "MM1 air bnb (somewhere on this road)",
+        "tourism": "chalet"
+      }
+    },
+    {
+      "type": "node",
       "id": 4999122321,
       "lat": -8.5472365,
       "lon": 115.2746731,
@@ -3598,7 +3626,7 @@
         "email": "sedayatana_gigi@hotmail.com",
         "name": "Sujana Home Stay",
         "operator": "I Nyoman Sedayatana",
-        "phone": "+62 812-3925-799",
+        "phone": "08123925799",
         "tourism": "guest_house"
       }
     },
@@ -3927,7 +3955,7 @@
       "lon": 115.2491118,
       "tags": {
         "name": "Villa Rona Ubud AIRBNB",
-        "phone": "+62 852-3881-9500",
+        "phone": "085238819500",
         "tourism": "guest_house"
       }
     },
@@ -4037,7 +4065,7 @@
         "internet_access": "wlan",
         "internet_access:fee": "yes",
         "name": "Ubad Retreat",
-        "phone": "+62 361 8987460",
+        "phone": "(0361) 8987460",
         "rooms": "9",
         "tourism": "hotel",
         "website": "http://www.ubadretreat.com/"
@@ -4137,7 +4165,7 @@
         "email": "pondoktamanasri@gmail.com",
         "name": "Pondok Taman Asri Homestay",
         "operator": "Cokorda Agung",
-        "phone": "+62 36-19080364",
+        "phone": "03619080364",
         "tourism": "hostel"
       }
     },
@@ -4234,7 +4262,7 @@
         "email": "infomukahouse@gmail.com",
         "internet_access": "wlan",
         "name": "Muka house",
-        "phone": "+62 819-1630-2780",
+        "phone": "081916302780",
         "tourism": "hotel"
       }
     },
@@ -4309,7 +4337,7 @@
         "email": "dedy.maelan@gmail.com",
         "name": "Gogo Backpackers House",
         "operator": "deddy",
-        "phone": "+62 878-6626-3403",
+        "phone": "087866263403",
         "tourism": "hostel"
       }
     },
@@ -4579,7 +4607,7 @@
       "type": "node",
       "id": 5875284387,
       "lat": -8.4737547,
-      "lon": 115.2637077,
+      "lon": 115.2637372,
       "tags": {
         "addr:street": "Jalan Kelabang Moding",
         "internet_access": "wlan",
@@ -4617,7 +4645,7 @@
         "addr:street": "AA Gde Rai",
         "internet_access": "wlan",
         "name": "Ubud Batan Nyuh Bed Breakfast & Spa",
-        "phone": "+62 878-5711-6969",
+        "phone": "087857116969",
         "tourism": "hotel"
       }
     },
@@ -4683,7 +4711,7 @@
       "lon": 115.2569316,
       "tags": {
         "name": "Kuna Bali",
-        "phone": "+62 36-1977331",
+        "phone": "0361977331",
         "tourism": "hostel",
         "website": "https://kunabali.com"
       }
@@ -4879,9 +4907,7 @@
       "lat": -8.5126398,
       "lon": 115.2681626,
       "tags": {
-        "addr:housenumber": "25",
-        "addr:street": "Jln. Sukma Kesuma",
-        "name": "Wayan Guest House",
+        "name": "Nyomak warta",
         "tourism": "guest_house"
       }
     },
@@ -5146,7 +5172,7 @@
         "internet_access": "yes",
         "internet_access:fee": "no",
         "name": "Natura Villa Resort",
-        "phone": "+62 361 978666",
+        "phone": "62 361 978666",
         "rooms": "14",
         "tourism": "hotel",
         "website": "https://www.naturaresortbali.com",
@@ -5337,22 +5363,11 @@
     {
       "type": "node",
       "id": 6601525383,
-      "lat": -8.5055205,
-      "lon": 115.2516803,
+      "lat": -8.5059731,
+      "lon": 115.2518928,
       "tags": {
-        "addr:city": "Gianyar",
-        "addr:postcode": "80571",
-        "addr:province": "Bali",
-        "addr:street": "Jalan Penestanan Kelod",
-        "addr:subdistrict": "Ubud",
-        "guest_house": "bed_and_breakfast",
-        "internet_access": "wlan",
-        "internet_access:fee": "customers",
         "name": "Gerebig Bungalows",
-        "operator": "Gerebig Group",
-        "reservation": "required",
-        "rooms": "8",
-        "tourism": "guest_house"
+        "tourism": "hotel"
       }
     },
     {
@@ -5541,7 +5556,7 @@
       "lon": 115.2571033,
       "tags": {
         "name": "Dewa House Bisma",
-        "phone": "+62 819-9934-39",
+        "phone": "081 9993439",
         "tourism": "guest_house"
       }
     },
@@ -5552,7 +5567,7 @@
       "lon": 115.2590772,
       "tags": {
         "name": "Puji Bungalows",
-        "phone": "+62 361 971261",
+        "phone": "+62 0361 971261",
         "tourism": "guest_house"
       }
     },
@@ -5566,7 +5581,7 @@
         "addr:street": "Jalan Bisma",
         "email": "reservations@casalunabali.com",
         "name": "Honeymoon Guesthouse 2",
-        "phone": "+62 361 973282",
+        "phone": "+62 0361 973282",
         "tourism": "hotel",
         "website": "https://casalunabali.com/"
       }
@@ -6185,8 +6200,18 @@
         "addr:housenumber": "26",
         "addr:street": "Banjar Penestanan Kaja",
         "name": "RUMAH SEKAR villa",
-        "phone": "+62 812-4677-1808",
+        "phone": "081246771808",
         "tourism": "guest_house"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7213870485,
+      "lat": -8.5017007,
+      "lon": 115.2782817,
+      "tags": {
+        "name": "our home",
+        "tourism": "hotel"
       }
     },
     {
@@ -7040,7 +7065,7 @@
         "opening_hours": "24/7",
         "phone": "+62 859 33180164",
         "tourism": "hostel",
-        "website": "https://peanut-house-ubud.business.site/"
+        "website": "https://peanut-house-ubud.business.site/?utm_source=gmb&utm_medium=referral"
       }
     },
     {
@@ -7376,8 +7401,8 @@
     {
       "type": "node",
       "id": 11840775969,
-      "lat": -8.5499732,
-      "lon": 115.2769667,
+      "lat": -8.5499545,
+      "lon": 115.2771767,
       "tags": {
         "name": "Green Coconut Cottage",
         "name:fr": "Green Coconut Cottage",
@@ -8391,7 +8416,7 @@
         "payment:cash": "yes",
         "payment:credit_cards": "yes",
         "payment:debit_cards": "yes",
-        "phone": "+62 812-2663-7310",
+        "phone": "081226637310",
         "tourism": "guest_house",
         "wheelchair": "no"
       }
@@ -8493,7 +8518,7 @@
         "addr:subdistrict": "Petulu",
         "air_conditioning": "yes",
         "brand": "Saughina",
-        "description": "There is a hanging pool with lush views.",
+        "description": "Saughina Ubud is a family-owned villa in central Ubud with warm local hospitality. Enjoy a hanging pool with lush views, a spacious comfy bed, and a calm setting just a short walk from Ubud Palace, Ubud Market, and the Kutuh Kecak performance.",
         "email": "contact@saughinaubud.com",
         "image": "https://drive.google.com/file/d/1c6vYisVcEDFab4HESKj2TgVOEjDhtBk7/view?usp=sharing",
         "internet_access": "yes",
@@ -8535,7 +8560,7 @@
       "lon": 115.2480382,
       "tags": {
         "name": "Villa Debara Kubu",
-        "tourism": "chalet"
+        "tourism": "apartment"
       }
     },
     {
@@ -8648,367 +8673,10 @@
       }
     },
     {
-      "type": "node",
-      "id": 13900487201,
-      "lat": -8.5554955,
-      "lon": 115.2880658,
-      "tags": {
-        "name": "Yana Villas",
-        "tourism": "hotel"
-      }
-    },
-    {
-      "type": "node",
-      "id": 13955530345,
-      "lat": -8.486466,
-      "lon": 115.2488862,
-      "tags": {
-        "food": "yes",
-        "name": "MATHIS Retreat Ubud",
-        "swimming_pool": "yes",
-        "tourism": "hotel",
-        "website": "https://dijiwasanctuaries.com/at/mathisretreatubud"
-      }
-    },
-    {
-      "type": "node",
-      "id": 13971694249,
-      "lat": -8.5146641,
-      "lon": 115.2690131,
-      "tags": {
-        "addr:city": "Gianyar",
-        "addr:district": "Ubud",
-        "addr:housename": "The Baris House",
-        "addr:neighbourhood": "Br. Teruna Kaje Kauh",
-        "addr:postcode": "8057",
-        "addr:province": "Bali",
-        "addr:street": "Jalan Cok Gede Rai Pudak, Gg Geriye",
-        "addr:subdistrict": "Peliatan",
-        "name": "The Baris House",
-        "phone": "+6287862027585",
-        "tourism": "guest_house"
-      }
-    },
-    {
-      "type": "node",
-      "id": 13989195801,
-      "lat": -8.5095685,
-      "lon": 115.2619283,
-      "tags": {
-        "check_date": "2026-07-05",
-        "internet_access": "wlan",
-        "name": "Bamboo Ubud Hostel",
-        "phone": "+62 857-9253-1284",
-        "tourism": "hotel"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14040675001,
-      "lat": -8.5248502,
-      "lon": 115.2549406,
-      "tags": {
-        "internet_access": "wlan",
-        "name": "Pondok Ketut’s",
-        "tourism": "guest_house"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14074551202,
-      "lat": -8.465534,
-      "lon": 115.2651399,
-      "tags": {
-        "addr:street": "Jalan Kelabang Moding",
-        "internet_access": "wlan",
-        "name": "Tini House Ubud",
-        "tourism": "hotel"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14128413638,
-      "lat": -8.4518362,
-      "lon": 115.2642062,
-      "tags": {
-        "addr:city": "Gianyar",
-        "addr:district": "Tegallalang",
-        "addr:housename": "Rumah Irak et Kadek Bali",
-        "addr:postcode": "80561",
-        "addr:province": "Bali",
-        "addr:street": "Jalan Kresna",
-        "addr:subdistrict": "Keliki",
-        "alt_name": "Irak Kadek Bali",
-        "alt_name:de": "Haus Irak et Kadek Bali",
-        "alt_name:en": "Irak et Kadek Bali Homestay",
-        "alt_name:es": "Casa Irak et Kadek Bali",
-        "alt_name:fr": "Francophone Irak et Kadek Bali",
-        "alt_name:id": "irak et kadek",
-        "alt_name:it": "Casa Irak et Kadek Bali",
-        "alt_name:ja": "イラクとカデック・バリの宿",
-        "alt_name:ru": "Дом Ирак и Кадек Бали",
-        "guest_house": "guest_house",
-        "internet_access": "yes",
-        "internet_access:fee": "no",
-        "name": "Rumah Irak et Kadek Bali",
-        "name:en": "Irak et Kadek Bali Homestay",
-        "name:fr": "Francophone Irak et Kadek Bali",
-        "opening_hours": "24/7",
-        "operator": "irak ketut dan kadek",
-        "phone": "+6285739244630",
-        "tourism": "guest_house",
-        "website": "https://irakkadekbali.com"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14148097968,
-      "lat": -8.5355124,
-      "lon": 115.2480967,
-      "tags": {
-        "addr:street": "villa",
-        "name": "Uma Jati Ubud villa",
-        "tourism": "chalet"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14148284473,
-      "lat": -8.5338665,
-      "lon": 115.2483987,
-      "tags": {
-        "name": "Villa Obah",
-        "tourism": "chalet"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14148284474,
-      "lat": -8.533667,
-      "lon": 115.2484022,
-      "tags": {
-        "name": "Villa Halo",
-        "tourism": "chalet"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14153551201,
-      "lat": -8.5358175,
-      "lon": 115.2481007,
-      "tags": {
-        "addr:postcode": "80571",
-        "addr:street": "Ulun Carik Extension",
-        "name": "Uma Jati Ubud",
-        "tourism": "guest_house"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14156673401,
-      "lat": -8.4873801,
-      "lon": 115.277049,
-      "tags": {
-        "addr:street": "Jalan Rayan Gentong",
-        "check_date": "2026-09-06",
-        "name": "Hotel Ashva Swiss-Belresort",
-        "tourism": "hotel"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14161875701,
-      "lat": -8.5209303,
-      "lon": 115.2630869,
-      "tags": {
-        "check_date": "2026-09-08",
-        "name": "Puri Garden Hotel & Hostel",
-        "tourism": "hostel",
-        "website": "https://purigardenhotel.com/"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14168668913,
-      "lat": -8.4900762,
-      "lon": 115.2700817,
-      "tags": {
-        "addr:city": "Gianyar",
-        "addr:district": "Ubud",
-        "addr:housename": "Villa Jenggala by GORO",
-        "addr:postcode": "80571",
-        "addr:province": "Bali",
-        "addr:street": "Jalan Tirta Tawar",
-        "addr:subdistrict": "Ubud",
-        "name": "Villa Jenggala by GORO",
-        "operator": "PT Manajemen GORO",
-        "tourism": "hotel"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14168784769,
-      "lat": -8.4855093,
-      "lon": 115.2700554,
-      "tags": {
-        "addr:city": "Gianyar",
-        "addr:district": "Ubud",
-        "addr:housename": "Villa The Kayu by GORO",
-        "addr:postcode": "80571",
-        "addr:province": "Bali",
-        "addr:street": "Jalan Tirta Tawar",
-        "addr:subdistrict": "Ubud",
-        "name": "Villa The Kayu by GORO",
-        "operator": "PT Manajemen GORO",
-        "tourism": "hotel"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14168784781,
-      "lat": -8.4823635,
-      "lon": 115.2712917,
-      "tags": {
-        "addr:city": "Gianyar",
-        "addr:district": "Ubud",
-        "addr:housename": "Villa Talun by GORO",
-        "addr:postcode": "80571",
-        "addr:province": "Bali",
-        "addr:street": "Jalan Tirta Tawar",
-        "addr:subdistrict": "Ubud",
-        "name": "Villa Talun by GORO",
-        "operator": "PT Manajemen GORO",
-        "tourism": "hotel"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14168784786,
-      "lat": -8.4776748,
-      "lon": 115.2692194,
-      "tags": {
-        "addr:city": "Gianyar",
-        "addr:district": "Ubud",
-        "addr:housename": "Villa Gantari by GORO",
-        "addr:postcode": "80571",
-        "addr:province": "Bali",
-        "addr:street": "Jalan Sri Wedari",
-        "addr:subdistrict": "Ubud",
-        "mobile": "+62 821 2211 4676",
-        "name": "Villa Gantari by GORO",
-        "operator": "PT Manajemen GORO",
-        "tourism": "hotel",
-        "website": "https://goro.id/property/MdTTh5w9QKAKDXW3rBMFEV"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14169218411,
-      "lat": -8.5183795,
-      "lon": 115.2617793,
-      "tags": {
-        "addr:street": "Jalan Monkey Forest",
-        "email": "info@tropicalspacehotel.com",
-        "internet_access": "wlan",
-        "internet_access:fee": "no",
-        "last_checked": "2026-09-10",
-        "name": "Tropical Space Hotel",
-        "tourism": "hotel",
-        "website": "https://tropicalspacehotel.com/"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14171029500,
-      "lat": -8.5451624,
-      "lon": 115.26589,
-      "tags": {
-        "addr:city": "Gianyar",
-        "addr:district": "Ubud",
-        "addr:housename": "Villa Lembah Giri by GORO",
-        "addr:postcode": "80571",
-        "addr:province": "Bali",
-        "addr:street": "Jalan Kumbakarna",
-        "addr:subdistrict": "Mas",
-        "internet_access": "wlan",
-        "internet_access:fee": "no",
-        "name": "Villa Lembah Giri by GORO",
-        "tourism": "hotel"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14181142232,
-      "lat": -8.5028119,
-      "lon": 115.2581459,
-      "tags": {
-        "name": "Nirwa 1",
-        "tourism": "guest_house"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14184397482,
-      "lat": -8.5097504,
-      "lon": 115.2537602,
-      "tags": {
-        "addr:city": "Gianyar",
-        "addr:housename": "Gerebig Villa",
-        "addr:postcode": "80571",
-        "addr:province": "Bali",
-        "addr:street": "Jalan Penestanan Kelod, Gang Uma Pacekan",
-        "addr:subdistrict": "Ubud",
-        "air_conditioning": "yes",
-        "guest_house": "house",
-        "internet_access": "wlan",
-        "internet_access:fee": "customers",
-        "name": "Gerebig Villa",
-        "operator": "Gerebig Group",
-        "reservation": "yes",
-        "rooms": "5",
-        "tourism": "guest_house"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14184444651,
-      "lat": -8.5148021,
-      "lon": 115.2502738,
-      "tags": {
-        "addr:city": "Gianyar",
-        "addr:district": "Ubud",
-        "addr:postcode": "80517",
-        "addr:province": "Bali",
-        "addr:street": "Jalan Katik Lantang",
-        "addr:subdistrict": "Singakerta",
-        "air_conditioning": "yes",
-        "email": "umacapungmas@gmail.com",
-        "guest_house": "hotel",
-        "internet_access": "wlan",
-        "internet_access:fee": "customers",
-        "name": "Uma Capung Mas Villa & Cottages",
-        "operator": "Ferry Heriawan",
-        "phone": "+6281238899758",
-        "reservation": "yes",
-        "rooms": "12",
-        "tourism": "guest_house"
-      }
-    },
-    {
-      "type": "node",
-      "id": 14338028401,
-      "lat": -8.5275479,
-      "lon": 115.2657678,
-      "tags": {
-        "name": "Green Field Resort Ubud",
-        "tourism": "hotel"
-      }
-    },
-    {
       "type": "way",
       "id": 97059276,
       "center": {
-        "lat": -8.5140418,
+        "lat": -8.5140583,
         "lon": 115.2499733
       },
       "tags": {
@@ -9037,8 +8705,8 @@
       "type": "way",
       "id": 377720972,
       "center": {
-        "lat": -8.5137529,
-        "lon": 115.266252
+        "lat": -8.5137443,
+        "lon": 115.2662554
       },
       "tags": {
         "addr:city": "Ubud",
@@ -9242,10 +8910,1506 @@
     },
     {
       "type": "way",
+      "id": 594956701,
+      "center": {
+        "lat": -8.4750801,
+        "lon": 115.2425963
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "building": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956703,
+      "center": {
+        "lat": -8.4752097,
+        "lon": 115.2427216
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "building": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956705,
+      "center": {
+        "lat": -8.4753186,
+        "lon": 115.2428693
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "building": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956727,
+      "center": {
+        "lat": -8.474683,
+        "lon": 115.2441358
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956729,
+      "center": {
+        "lat": -8.4744482,
+        "lon": 115.2443478
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956731,
+      "center": {
+        "lat": -8.4745596,
+        "lon": 115.2442324
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956733,
+      "center": {
+        "lat": -8.4746763,
+        "lon": 115.2443786
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956735,
+      "center": {
+        "lat": -8.474557,
+        "lon": 115.2444966
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956737,
+      "center": {
+        "lat": -8.4743116,
+        "lon": 115.2447394
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956739,
+      "center": {
+        "lat": -8.4744482,
+        "lon": 115.2446603
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956742,
+      "center": {
+        "lat": -8.4743558,
+        "lon": 115.2445056
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956744,
+      "center": {
+        "lat": -8.4742057,
+        "lon": 115.2445778
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956746,
+      "center": {
+        "lat": -8.4742054,
+        "lon": 115.2443679
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956748,
+      "center": {
+        "lat": -8.4742665,
+        "lon": 115.2442311
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956750,
+      "center": {
+        "lat": -8.4743832,
+        "lon": 115.2441171
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956752,
+      "center": {
+        "lat": -8.474496,
+        "lon": 115.2440098
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956754,
+      "center": {
+        "lat": -8.4746126,
+        "lon": 115.2439335
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956756,
+      "center": {
+        "lat": -8.4741975,
+        "lon": 115.2440272
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956758,
+      "center": {
+        "lat": -8.474297,
+        "lon": 115.2439039
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956760,
+      "center": {
+        "lat": -8.4743938,
+        "lon": 115.2437761
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956779,
+      "center": {
+        "lat": -8.4746979,
+        "lon": 115.2433313
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956782,
+      "center": {
+        "lat": -8.4747315,
+        "lon": 115.243177
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956785,
+      "center": {
+        "lat": -8.4747619,
+        "lon": 115.2430126
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956788,
+      "center": {
+        "lat": -8.4748041,
+        "lon": 115.2428494
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956791,
+      "center": {
+        "lat": -8.4747188,
+        "lon": 115.2426875
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956795,
+      "center": {
+        "lat": -8.474874,
+        "lon": 115.2426875
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956799,
+      "center": {
+        "lat": -8.474878,
+        "lon": 115.2424836
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956803,
+      "center": {
+        "lat": -8.4750265,
+        "lon": 115.2422569
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956807,
+      "center": {
+        "lat": -8.474878,
+        "lon": 115.2422569
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956811,
+      "center": {
+        "lat": -8.4747374,
+        "lon": 115.2422677
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956814,
+      "center": {
+        "lat": -8.4747314,
+        "lon": 115.2424923
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956817,
+      "center": {
+        "lat": -8.4746029,
+        "lon": 115.2423431
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956820,
+      "center": {
+        "lat": -8.4745809,
+        "lon": 115.2425011
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956823,
+      "center": {
+        "lat": -8.4745782,
+        "lon": 115.2426579
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956825,
+      "center": {
+        "lat": -8.4745729,
+        "lon": 115.2428189
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956828,
+      "center": {
+        "lat": -8.4745703,
+        "lon": 115.2429691
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956831,
+      "center": {
+        "lat": -8.4745384,
+        "lon": 115.243126
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956834,
+      "center": {
+        "lat": -8.474516,
+        "lon": 115.243283
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956842,
+      "center": {
+        "lat": -8.4754609,
+        "lon": 115.2432365
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "building": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956845,
+      "center": {
+        "lat": -8.4752494,
+        "lon": 115.2437442
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956848,
+      "center": {
+        "lat": -8.4752627,
+        "lon": 115.2438931
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956852,
+      "center": {
+        "lat": -8.4753025,
+        "lon": 115.2440352
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956855,
+      "center": {
+        "lat": -8.475528,
+        "lon": 115.2439722
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956858,
+      "center": {
+        "lat": -8.4754947,
+        "lon": 115.2438166
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956861,
+      "center": {
+        "lat": -8.4754731,
+        "lon": 115.2436579
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956864,
+      "center": {
+        "lat": -8.4756221,
+        "lon": 115.2435404
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956867,
+      "center": {
+        "lat": -8.4757946,
+        "lon": 115.2434425
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "building": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956870,
+      "center": {
+        "lat": -8.4758688,
+        "lon": 115.2435994
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "building": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956873,
+      "center": {
+        "lat": -8.4759392,
+        "lon": 115.243763
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "building": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956877,
+      "center": {
+        "lat": -8.4756831,
+        "lon": 115.2436575
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956880,
+      "center": {
+        "lat": -8.4757335,
+        "lon": 115.2438154
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956883,
+      "center": {
+        "lat": -8.4757712,
+        "lon": 115.24396
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956886,
+      "center": {
+        "lat": -8.4759541,
+        "lon": 115.2441118
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "building": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956890,
+      "center": {
+        "lat": -8.4758312,
+        "lon": 115.2442749
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956893,
+      "center": {
+        "lat": -8.4759781,
+        "lon": 115.2443652
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956896,
+      "center": {
+        "lat": -8.4761338,
+        "lon": 115.2444423
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956900,
+      "center": {
+        "lat": -8.4761882,
+        "lon": 115.2446694
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956903,
+      "center": {
+        "lat": -8.4760553,
+        "lon": 115.2446141
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956906,
+      "center": {
+        "lat": -8.4759226,
+        "lon": 115.2445972
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956910,
+      "center": {
+        "lat": -8.4757562,
+        "lon": 115.2445708
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956914,
+      "center": {
+        "lat": -8.4756115,
+        "lon": 115.2444738
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956917,
+      "center": {
+        "lat": -8.475565,
+        "lon": 115.2443234
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956921,
+      "center": {
+        "lat": -8.4753544,
+        "lon": 115.2444743
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956924,
+      "center": {
+        "lat": -8.4753995,
+        "lon": 115.2446238
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956927,
+      "center": {
+        "lat": -8.47565,
+        "lon": 115.2448078
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956929,
+      "center": {
+        "lat": -8.4758144,
+        "lon": 115.2448368
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956932,
+      "center": {
+        "lat": -8.4759465,
+        "lon": 115.2448263
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594956942,
+      "center": {
+        "lat": -8.4755047,
+        "lon": 115.2447816
+      },
+      "tags": {
+        "addr:city": "Bali",
+        "addr:district": "Bali",
+        "addr:housenumber": "198",
+        "addr:postcode": "80571",
+        "addr:street": "Desa Kedewatan PO Box",
+        "addr:subdistrict": "Ubud",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Deluxe Pool Villa",
+        "phone": "+62-361-980022",
+        "tourism": "apartment",
+        "website": "https://royalpitamaha-bali.com/"
+      }
+    },
+    {
+      "type": "way",
       "id": 595905624,
       "center": {
-        "lat": -8.5413878,
-        "lon": 115.2648892
+        "lat": -8.5413851,
+        "lon": 115.2648785
       },
       "tags": {
         "building": "yes",
@@ -9421,8 +10585,8 @@
       "type": "way",
       "id": 659785048,
       "center": {
-        "lat": -8.5064553,
-        "lon": 115.2663437
+        "lat": -8.5064938,
+        "lon": 115.2663759
       },
       "tags": {
         "addr:housenumber": "14",
@@ -9450,8 +10614,8 @@
       "type": "way",
       "id": 661667201,
       "center": {
-        "lat": -8.5010805,
-        "lon": 115.2626431
+        "lat": -8.5010712,
+        "lon": 115.2626967
       },
       "tags": {
         "addr:housenumber": "77",
@@ -9583,8 +10747,8 @@
       "type": "way",
       "id": 721490687,
       "center": {
-        "lat": -8.4929459,
-        "lon": 115.2669876
+        "lat": -8.49293,
+        "lon": 115.2670037
       },
       "tags": {
         "building": "yes",
@@ -9606,7 +10770,7 @@
         "building": "yes",
         "building:levels": "1",
         "name": "Kajane Mua",
-        "phone": "+62 361 972875; +62 361 972877",
+        "phone": "+62 361 972875/7",
         "tourism": "hotel",
         "website": "https://www.kajane.com/",
         "wheelchair": "limited"
@@ -9616,8 +10780,8 @@
       "type": "way",
       "id": 724677216,
       "center": {
-        "lat": -8.5186191,
-        "lon": 115.2621282
+        "lat": -8.5186735,
+        "lon": 115.2621662
       },
       "tags": {
         "addr:city": "Ubud",
@@ -9639,22 +10803,6 @@
         "reservation": "required",
         "tourism": "hotel",
         "website": "https://anumanaubud.com"
-      }
-    },
-    {
-      "type": "way",
-      "id": 724677218,
-      "center": {
-        "lat": -8.5184981,
-        "lon": 115.2619835
-      },
-      "tags": {
-        "building": "yes",
-        "building:levels": "1",
-        "internet_access": "wlan",
-        "name": "Ubud tropical garden",
-        "tourism": "hotel",
-        "wheelchair": "yes"
       }
     },
     {
@@ -9778,7 +10926,7 @@
         "name:it": "Shiva Dham Villa's Ubud",
         "opening_hours": "24/7",
         "operator": "enung nurhayati",
-        "phone": "+62 36-19084566",
+        "phone": "03619084566",
         "rooms": "3",
         "tourism": "hotel",
         "website": "http://shivadhamvilla.com"
@@ -9833,8 +10981,8 @@
       "type": "way",
       "id": 965327338,
       "center": {
-        "lat": -8.4925005,
-        "lon": 115.2705353
+        "lat": -8.4925018,
+        "lon": 115.2705098
       },
       "tags": {
         "building": "yes",
@@ -9904,8 +11052,8 @@
       "type": "way",
       "id": 1067595196,
       "center": {
-        "lat": -8.5102578,
-        "lon": 115.2653921
+        "lat": -8.5102286,
+        "lon": 115.2653915
       },
       "tags": {
         "building": "apartments",
@@ -10218,7 +11366,7 @@
       "tags": {
         "building": "yes",
         "name": "Bumi Muwa Ubud Katiklantang",
-        "phone": "+62 36-1980936",
+        "phone": "0361980936",
         "tourism": "guest_house"
       }
     },
@@ -10270,7 +11418,7 @@
         "internet_access": "wlan",
         "name": "Sabana Ubud",
         "opening_hours": "24/7",
-        "phone": "+62 812 3778 0352",
+        "phone": "6281237780352",
         "tourism": "hotel"
       }
     },
@@ -10278,8 +11426,8 @@
       "type": "way",
       "id": 1257004561,
       "center": {
-        "lat": -8.4746669,
-        "lon": 115.2680525
+        "lat": -8.4746841,
+        "lon": 115.2680699
       },
       "tags": {
         "building": "yes",

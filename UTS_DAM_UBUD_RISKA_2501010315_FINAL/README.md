@@ -5,56 +5,45 @@
 **Program Studi:** Informatika — INSTIKI
 
 ## Tujuan
-Proyek ini mengolah data akomodasi Kecamatan Ubud dari publikasi BPS *Direktori Hotel Kabupaten Gianyar 2017* (data direktori tahun 2015). Data cuaca historis wilayah Ubud diambil melalui Open-Meteo Historical Weather API untuk 1–31 Januari 2025.
+Proyek ini mengolah direktori akomodasi Kecamatan Ubud dari publikasi BPS *Direktori Hotel Kabupaten Gianyar 2017* (direktori tahun 2015), kemudian menambahkan data cuaca historis dan data titik akomodasi dari OpenStreetMap sebagai sumber tambahan.
 
 ## Sumber data
-1. **Akomodasi:** `data/interim/akomodasi_ubud_bps_2015_ekstraksi.csv`, hasil ekstraksi publikasi BPS yang disimpan dalam `data/raw/`.
-2. **Cuaca:** Open-Meteo Historical Weather API, titik koordinat Ubud (-8.5069, 115.2625), periode 1–31 Januari 2025.
-3. **Artikel Wikipedia:** MediaWiki API Wikipedia bahasa Indonesia untuk pencarian artikel terkait Ubud. Sumber ini hanya digunakan sebagai data tambahan informasi wilayah/artikel, bukan direktori resmi akomodasi.
+1. **BPS:** PDF publikasi di `data/raw/BPS5104-direktori_hotel_kabupaten_gianyar_2017.pdf` dan hasil ekstraksi di `data/interim/akomodasi_ubud_bps_2015_ekstraksi.csv`. Pemeriksaan repository menunjukkan CSV memiliki 326 baris data dan 7 kolom.
+2. **Open-Meteo:** Historical Weather API untuk koordinat Ubud (-8.5069, 115.2625), periode 1–31 Januari 2025.
+3. **OpenStreetMap:** Overpass API mengambil objek dengan tag pariwisata/akomodasi pada bounding box perkiraan sekitar Ubud. Data ini merupakan sumber tambahan, bukan direktori resmi BPS dan bukan scraping HTML. Kelengkapan bergantung pada data yang dipetakan kontributor.
+4. **Wikipedia:** MediaWiki API untuk mencari artikel terkait Ubud. Hasilnya hanya metadata artikel tambahan, bukan daftar akomodasi.
 
-## Perbaikan analisis
-- Seluruh statistik akomodasi dihitung dari baris aktual CSV BPS. Tidak ada nama hotel atau desa tiruan yang dibuat untuk analisis.
-- Distribusi akomodasi dihitung per desa dan klasifikasi, lalu disimpan sebagai CSV.
-- Ukuran penyimpanan dihitung dari ukuran file aktual (`stat().st_size`) dan dilaporkan dalam byte serta KB. Tidak menggunakan estimasi manual.
-- Respons mentah Open-Meteo disimpan sebagai JSON sebelum diturunkan menjadi CSV.
-- Respons pencarian dan detail artikel Wikipedia disimpan sebagai JSON mentah, sedangkan tabel artikel disimpan sebagai CSV.
-- File yang tersedia dicatat dalam provenance dengan ukuran byte dan hash MD5.
+## Perbaikan yang diterapkan pada notebook
+- Analisis utama memakai baris aktual CSV BPS, bukan nama hotel atau desa tiruan.
+- Ditambahkan akuisisi objek akomodasi dari OpenStreetMap Overpass API. Respons mentah disimpan sebagai JSON sebelum diekstrak menjadi CSV.
+- Respons mentah Open-Meteo dan MediaWiki API disimpan sebagai JSON, lalu diturunkan ke CSV.
+- Pengukuran storage menghitung ukuran file aktual menggunakan `stat().st_size`, dalam byte, KB, dan MB. File pengukuran dan provenance dikecualikan dari total agar tidak terjadi pengukuran siklik.
+- Provenance mencatat file yang benar-benar tersedia, ukuran byte, dan hash MD5.
 
-## Scraping dan etika
-Pemeriksaan `https://bali.bps.go.id/robots.txt` pada eksekusi sebelumnya menghasilkan HTTP 403. Karena aturan akses tidak dapat diverifikasi, notebook tidak melakukan scraping halaman BPS dan tidak mencoba melewati pembatasan. Akuisisi tambahan Wikipedia dilakukan melalui MediaWiki API resmi dengan jeda permintaan. Hasil Wikipedia tidak boleh dianggap sebagai data hotel lengkap.
+## Etika dan batasan scraping
+Pemeriksaan `https://bali.bps.go.id/robots.txt` sebelumnya menghasilkan HTTP 403. Karena aturan akses tidak dapat diverifikasi, notebook tidak melakukan scraping halaman BPS dan tidak mencoba melewati pembatasan. OpenStreetMap diakses melalui Overpass API sesuai dokumentasi API, bukan dengan mengambil/menyalin halaman HTML. Cantumkan atribusi **© OpenStreetMap contributors** dan lisensi **ODbL**. [Panduan Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide). [Atribusi OpenStreetMap](https://www.openstreetmap.org/copyright).
 
 ## Perbedaan periode
-Dataset akomodasi BPS berisi data tahun 2015, sedangkan cuaca yang diambil adalah Januari 2025. Karena periodenya berbeda, cuaca hanya digunakan sebagai konteks wilayah dan tidak mewakili kondisi cuaca saat data akomodasi dicatat.
+Data direktori BPS merujuk tahun 2015, sedangkan cuaca diambil untuk Januari 2025. Karena periodenya berbeda, cuaca hanya menjadi konteks wilayah dan bukan kondisi cuaca saat pendataan akomodasi.
 
-## Struktur keluaran setelah notebook dijalankan
-```
-data/
-├── raw/
-│   ├── BPS5104-direktori_hotel_kabupaten_gianyar_2017.pdf
-│   ├── open_meteo_ubud_2025-01.json
-│   ├── wikipedia_ubud_search_raw.json
-│   └── robots_bali_bps.txt        (jika berhasil diakses)
-├── interim/
-│   ├── akomodasi_ubud_bps_2015_ekstraksi.csv
-│   ├── cuaca_harian_ubud_2025-01.csv
-│   ├── wikipedia_ubud_articles.csv
-│   ├── analisis_akomodasi_per_desa.csv
-│   └── analisis_akomodasi_per_klasifikasi.csv
-└── processed/
-    └── akomodasi_cuaca_ubud.csv
-
-metadata/
-├── provenance.json
-├── provenance.csv
-└── storage_measurement.csv
-```
+## Keluaran setelah notebook dijalankan
+- `data/raw/open_meteo_ubud_2025-01.json`
+- `data/raw/wikipedia_ubud_search_raw.json`
+- `data/raw/openstreetmap_akomodasi_ubud_raw.json`
+- `data/interim/cuaca_harian_ubud_2025-01.csv`
+- `data/interim/wikipedia_ubud_articles.csv`
+- `data/interim/openstreetmap_akomodasi_ubud.csv`
+- `data/interim/analisis_akomodasi_per_desa.csv`
+- `data/interim/analisis_akomodasi_per_klasifikasi.csv`
+- `data/processed/akomodasi_cuaca_ubud.csv`
+- `metadata/storage_measurement.csv`
+- `metadata/provenance.json` dan `metadata/provenance.csv`
 
 ## Cara menjalankan
-1. Buka notebook `UTS_DAM_UBUD_RISKA_2501010315.ipynb` melalui Google Colab.
-2. Jalankan seluruh sel dari awal sampai akhir (**Runtime → Run all**).
-3. Pastikan PDF BPS dan CSV ekstraksi tersedia di struktur folder repository.
-4. Periksa tabel analisis, ukuran file, status robots.txt, serta jumlah artikel Wikipedia.
-5. Pastikan file JSON mentah, CSV turunan, dan provenance benar-benar dihasilkan.
-6. Jika ingin menyimpan seluruh hasil ke GitHub, unggah/commit folder keluaran setelah eksekusi berhasil.
+1. Buka notebook di Google Colab.
+2. Pilih **Runtime → Run all** dan tunggu seluruh sel selesai.
+3. Pastikan request API berhasil dan file keluaran benar-benar terbentuk.
+4. Periksa jumlah data, hasil validasi merge, ukuran storage, dan provenance.
+5. Simpan notebook dengan output terbaru, lalu unggah file keluaran yang dihasilkan ke GitHub.
 
-**Catatan penting:** menambahkan kode ke repository tidak sama dengan menjalankan notebook. File JSON API dan hasil pengolahan baru menjadi artefak hasil eksekusi setelah notebook dijalankan dengan koneksi internet. Jangan membuat atau mengisi file JSON dengan data contoh.
+**Catatan:** Perubahan kode di GitHub belum berarti notebook sudah dieksekusi. File JSON/CSV hasil API baru akan tersedia setelah notebook dijalankan dengan koneksi internet. Jangan membuat file JSON contoh atau menyatakan akuisisi berhasil sebelum respons API benar-benar diterima.
